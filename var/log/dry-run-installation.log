@@ -1,0 +1,7 @@
+CREATE TABLE `mageMastery_blog_post` (
+`post_id` smallint  NOT NULL  AUTO_INCREMENT COMMENT "Post Id", 
+`title` varchar(255) NOT NULL  COMMENT "Page Title", 
+`updated_at` timestamp NULL   COMMENT "Update Time", 
+CONSTRAINT  PRIMARY KEY (`post_id`)
+) ENGINE=innodb DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_general_ci COMMENT="Mage Mastery Blog Post Table"
+
