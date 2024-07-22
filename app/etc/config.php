@@ -362,6 +362,7 @@ return [
         'PayPal_BraintreeGiftWrapping' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Training_PluginExample' => 1,
+        'Training_DispatchEventExample' => 1,
         'Training_ObserverExample' => 1,
         'Training_DisablePluginExample' => 1
     ]

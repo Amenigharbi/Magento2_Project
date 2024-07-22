@@ -22,3 +22,5 @@
 [2024-07-22T10:41:42.398417+00:00] observer-example.INFO: Event Triggered in frontend scope  [] []
 [2024-07-22T10:41:45.149293+00:00] observer-example.INFO: Event Triggered in global scope [] []
 [2024-07-22T10:41:45.154837+00:00] observer-example.INFO: Event Triggered in Admin scope [] []
+[2024-07-22T11:08:27.429287+00:00] observer-example.INFO: Event Triggered in global scope [] []
+[2024-07-22T11:08:29.006634+00:00] observer-example.INFO: Event Triggered in frontend scope  [] []
