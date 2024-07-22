@@ -1,10 +1,10 @@
 <?php
-namespace Magento\Theme\Model\Config\Processor\DesignTheme;
+namespace Magento\ConfigurableProduct\Model\AttributeOptionProvider;
 
 /**
- * Proxy class for @see \Magento\Theme\Model\Config\Processor\DesignTheme
+ * Proxy class for @see \Magento\ConfigurableProduct\Model\AttributeOptionProvider
  */
-class Proxy extends \Magento\Theme\Model\Config\Processor\DesignTheme implements \Magento\Framework\ObjectManager\NoninterceptableInterface
+class Proxy extends \Magento\ConfigurableProduct\Model\AttributeOptionProvider implements \Magento\Framework\ObjectManager\NoninterceptableInterface
 {
     /**
      * Object Manager instance
@@ -23,7 +23,7 @@ class Proxy extends \Magento\Theme\Model\Config\Processor\DesignTheme implements
     /**
      * Proxied instance
      *
-     * @var \Magento\Theme\Model\Config\Processor\DesignTheme
+     * @var \Magento\ConfigurableProduct\Model\AttributeOptionProvider
      */
     protected $_subject = null;
 
@@ -41,7 +41,7 @@ class Proxy extends \Magento\Theme\Model\Config\Processor\DesignTheme implements
      * @param string $instanceName
      * @param bool $shared
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Theme\\Model\\Config\\Processor\\DesignTheme', $shared = true)
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\ConfigurableProduct\\Model\\AttributeOptionProvider', $shared = true)
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -85,7 +85,7 @@ class Proxy extends \Magento\Theme\Model\Config\Processor\DesignTheme implements
     /**
      * Get proxied instance
      *
-     * @return \Magento\Theme\Model\Config\Processor\DesignTheme
+     * @return \Magento\ConfigurableProduct\Model\AttributeOptionProvider
      */
     protected function _getSubject()
     {
@@ -100,8 +100,8 @@ class Proxy extends \Magento\Theme\Model\Config\Processor\DesignTheme implements
     /**
      * {@inheritdoc}
      */
-    public function process(array $config)
+    public function getAttributeOptions(\Magento\Eav\Model\Entity\Attribute\AbstractAttribute $superAttribute, $productId)
     {
-        return $this->_getSubject()->process($config);
+        return $this->_getSubject()->getAttributeOptions($superAttribute, $productId);
     }
 }

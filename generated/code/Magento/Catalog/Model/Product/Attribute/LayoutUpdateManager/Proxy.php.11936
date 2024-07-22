@@ -1,10 +1,10 @@
 <?php
-namespace Magento\Framework\App\Config\PostProcessorComposite;
+namespace Magento\Catalog\Model\Product\Attribute\LayoutUpdateManager;
 
 /**
- * Proxy class for @see \Magento\Framework\App\Config\PostProcessorComposite
+ * Proxy class for @see \Magento\Catalog\Model\Product\Attribute\LayoutUpdateManager
  */
-class Proxy extends \Magento\Framework\App\Config\PostProcessorComposite implements \Magento\Framework\ObjectManager\NoninterceptableInterface
+class Proxy extends \Magento\Catalog\Model\Product\Attribute\LayoutUpdateManager implements \Magento\Framework\ObjectManager\NoninterceptableInterface
 {
     /**
      * Object Manager instance
@@ -23,7 +23,7 @@ class Proxy extends \Magento\Framework\App\Config\PostProcessorComposite impleme
     /**
      * Proxied instance
      *
-     * @var \Magento\Framework\App\Config\PostProcessorComposite
+     * @var \Magento\Catalog\Model\Product\Attribute\LayoutUpdateManager
      */
     protected $_subject = null;
 
@@ -41,7 +41,7 @@ class Proxy extends \Magento\Framework\App\Config\PostProcessorComposite impleme
      * @param string $instanceName
      * @param bool $shared
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Framework\\App\\Config\\PostProcessorComposite', $shared = true)
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Catalog\\Model\\Product\\Attribute\\LayoutUpdateManager', $shared = true)
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -85,7 +85,7 @@ class Proxy extends \Magento\Framework\App\Config\PostProcessorComposite impleme
     /**
      * Get proxied instance
      *
-     * @return \Magento\Framework\App\Config\PostProcessorComposite
+     * @return \Magento\Catalog\Model\Product\Attribute\LayoutUpdateManager
      */
     protected function _getSubject()
     {
@@ -100,8 +100,16 @@ class Proxy extends \Magento\Framework\App\Config\PostProcessorComposite impleme
     /**
      * {@inheritdoc}
      */
-    public function process(array $config)
+    public function fetchAvailableFiles(\Magento\Catalog\Api\Data\ProductInterface $product) : array
     {
-        return $this->_getSubject()->process($config);
+        return $this->_getSubject()->fetchAvailableFiles($product);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function extractCustomSettings(\Magento\Catalog\Api\Data\ProductInterface $product, \Magento\Framework\DataObject $intoSettings) : void
+    {
+        $this->_getSubject()->extractCustomSettings($product, $intoSettings);
     }
 }

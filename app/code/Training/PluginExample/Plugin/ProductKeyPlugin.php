@@ -23,7 +23,7 @@ class ProductKeyPlugin
     public function aroundGetKey(ProductKey $subject, callable $proceed, ...$args)
     {
         $result =  $proceed(...$args);
-        $result .= ' Item';
+        $result .= 'dummy data here';
         return $result;
     }
 }

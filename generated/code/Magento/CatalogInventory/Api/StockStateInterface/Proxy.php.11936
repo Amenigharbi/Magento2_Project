@@ -1,10 +1,10 @@
 <?php
-namespace Magento\Config\App\Config\Type\System\Reader;
+namespace Magento\CatalogInventory\Api\StockStateInterface;
 
 /**
- * Proxy class for @see \Magento\Config\App\Config\Type\System\Reader
+ * Proxy class for @see \Magento\CatalogInventory\Api\StockStateInterface
  */
-class Proxy extends \Magento\Config\App\Config\Type\System\Reader implements \Magento\Framework\ObjectManager\NoninterceptableInterface
+class Proxy implements \Magento\CatalogInventory\Api\StockStateInterface, \Magento\Framework\ObjectManager\NoninterceptableInterface
 {
     /**
      * Object Manager instance
@@ -23,7 +23,7 @@ class Proxy extends \Magento\Config\App\Config\Type\System\Reader implements \Ma
     /**
      * Proxied instance
      *
-     * @var \Magento\Config\App\Config\Type\System\Reader
+     * @var \Magento\CatalogInventory\Api\StockStateInterface
      */
     protected $_subject = null;
 
@@ -41,7 +41,7 @@ class Proxy extends \Magento\Config\App\Config\Type\System\Reader implements \Ma
      * @param string $instanceName
      * @param bool $shared
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Config\\App\\Config\\Type\\System\\Reader', $shared = true)
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\CatalogInventory\\Api\\StockStateInterface', $shared = true)
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -85,7 +85,7 @@ class Proxy extends \Magento\Config\App\Config\Type\System\Reader implements \Ma
     /**
      * Get proxied instance
      *
-     * @return \Magento\Config\App\Config\Type\System\Reader
+     * @return \Magento\CatalogInventory\Api\StockStateInterface
      */
     protected function _getSubject()
     {
@@ -100,8 +100,48 @@ class Proxy extends \Magento\Config\App\Config\Type\System\Reader implements \Ma
     /**
      * {@inheritdoc}
      */
-    public function read()
+    public function verifyStock($productId, $scopeId = null)
     {
-        return $this->_getSubject()->read();
+        return $this->_getSubject()->verifyStock($productId, $scopeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function verifyNotification($productId, $scopeId = null)
+    {
+        return $this->_getSubject()->verifyNotification($productId, $scopeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function checkQuoteItemQty($productId, $itemQty, $qtyToCheck, $origQty, $scopeId = null)
+    {
+        return $this->_getSubject()->checkQuoteItemQty($productId, $itemQty, $qtyToCheck, $origQty, $scopeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function checkQty($productId, $qty, $scopeId = null)
+    {
+        return $this->_getSubject()->checkQty($productId, $qty, $scopeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function suggestQty($productId, $qty, $scopeId = null)
+    {
+        return $this->_getSubject()->suggestQty($productId, $qty, $scopeId);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getStockQty($productId, $scopeId = null)
+    {
+        return $this->_getSubject()->getStockQty($productId, $scopeId);
     }
 }
