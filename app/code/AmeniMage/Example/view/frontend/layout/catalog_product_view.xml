@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.main">
+            <block name="delivery_message"
+                   class="Magento\Framework\View\Element\Template"
+                   template="AmeniMage_Example::delivery_message.phtml"
+                   before="product.info.price"
+            >
+                <arguments>
+                    <argument name="view_model" xsi:type="object">AmeniMage\Example\ViewModel\DeliveryMessage</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
