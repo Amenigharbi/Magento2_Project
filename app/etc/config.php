@@ -354,6 +354,7 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
+        'AmeniMage_DealWithDb' => 1,
         'AmeniMage_Example' => 1,
         'Mageplaza_HelloWorld' => 1,
         'MarkShust_PageBuilderSourceCode' => 1,
