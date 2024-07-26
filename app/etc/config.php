@@ -363,6 +363,7 @@ return [
         'PayPal_BraintreeGiftCardAccount' => 1,
         'PayPal_BraintreeGiftWrapping' => 1,
         'PayPal_BraintreeGraphQl' => 1,
+        'ThemeDev_Checkout' => 1,
         'Training_CronExample' => 1,
         'Training_DisableObserverExample' => 1,
         'Training_PluginExample' => 1,
