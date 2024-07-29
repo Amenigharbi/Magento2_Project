@@ -210,7 +210,7 @@
 }
 
 .page-footer {
-    background-color: #222;
+    background-color: #f1f1f1;
     color: #f1f1f1;
     padding: 40px 0;
     font-family: Arial, sans-serif;
@@ -224,7 +224,7 @@
     .footer {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #fff1ad;
         padding-bottom: 20px;
 
         .bugs {
@@ -329,6 +329,88 @@
     }
 }
 
+
+.navigation {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+/* Styles pour la liste des éléments du menu */
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Styles pour les éléments de la liste du menu */
+.navigation li {
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Styles pour les liens du menu */
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 3px;
+}
+
+/* Styles pour les liens au survol */
+.navigation a:hover {
+    background-color: #F373B5;
+    color: #fff;
+}
+
+/* Styles pour les liens actifs */
+.navigation a:focus {
+    background-color: #F373B5;
+    color: #fff;
+    outline: none;
+}
+
+/* Styles pour les sous-menus */
+.navigation .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+/* Styles pour afficher les sous-menus au survol */
+.navigation li:hover .submenu {
+    display: block;
+}
+
+/* Styles pour les éléments de la liste des sous-menus */
+.navigation .submenu li {
+    margin: 0;
+}
+
+/* Styles pour les liens des sous-menus */
+.navigation .submenu a {
+    padding: 8px 12px;
+}
+
+/* Styles pour les liens des sous-menus au survol */
+.navigation .submenu a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
 
 //
 //  Desktop
