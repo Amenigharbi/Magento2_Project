@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/styles-l.less"/>
+    </head>
+
+    <body>
+        <!-- Remove an existing block -->
+         <referenceBlock name="view.addto.compare" remove="true"/>
+         <referenceBlock name="view.addto.wishlist" remove="true"/>
+          <referenceBlock name="product.info.stock.sku" remove="true"/>
+
+    </body>
+</page>

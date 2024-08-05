@@ -1,0 +1,5 @@
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Mage Mastery Custom </title> <!-- The theme's name -->
+    <parent>Magento/luma</parent> <!-- The parent theme, replace with your desired parent theme -->
+
+</theme>

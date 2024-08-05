@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- pour le main -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Add Main Content Block only on the home page -->
+        <referenceBlock name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="MageMastery.custom.main_content"
+                   template="MageMastery_customTheme::main_content.phtml" />
+        </referenceBlock>
+    </body>
+</page>

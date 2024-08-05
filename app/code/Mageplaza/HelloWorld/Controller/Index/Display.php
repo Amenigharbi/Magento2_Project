@@ -1,24 +1,19 @@
 <?php
 namespace Mageplaza\HelloWorld\Controller\Index;
 
-use Magento\Framework\App\Action\HttpGetActionInterface;
-use Magento\Framework\App\Action\Context;
-use Magento\Framework\View\Result\PageFactory;
-
-class Display implements HttpGetActionInterface
+class Display extends \Magento\Framework\App\Action\Action
 {
-    protected $pageFactory;
+	protected $_pageFactory;
+	public function __construct(
+		\Magento\Framework\App\Action\Context $context,
+		\Magento\Framework\View\Result\PageFactory $pageFactory)
+	{
+		$this->_pageFactory = $pageFactory;
+		return parent::__construct($context);
+	}
 
-    public function __construct(
-        Context $context,
-        PageFactory $pageFactory
-    ) {
-        $this->pageFactory = $pageFactory;
-    }
-
-    public function execute()
-    {
-        return $this->pageFactory->create();
-    }
+	public function execute()
+	{
+		return $this->_pageFactory->create();
+	}
 }
-

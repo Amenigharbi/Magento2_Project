@@ -1,4 +1,6 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <!-- Remove Compare Products -->
         <referenceBlock name="catalog.compare.sidebar" remove="true" />
@@ -9,10 +11,5 @@
         <!-- Remove My Wishlist -->
         <referenceBlock name="wishlist_sidebar" remove="true" />
 
-        <!-- Remove the "We can't find products matching the selection." message -->
-        <referenceBlock name="category.products.list" remove="true" />
-
-        
-        
     </body>
 </page>

@@ -1,0 +1,18 @@
+{
+  "name": "magento2",
+  "version": "2.4.3",
+  "description": "Magento 2",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

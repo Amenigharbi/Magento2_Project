@@ -354,21 +354,23 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
-        'AmeniMage_DealWithDb' => 1,
-        'AmeniMage_Example' => 1,
+        'Macademy_Jumpstart' => 1,
+        'Mage_Chekout' => 1,
         'Mageplaza_HelloWorld' => 1,
         'MarkShust_PageBuilderSourceCode' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeCustomerBalance' => 1,
         'PayPal_BraintreeGiftCardAccount' => 1,
         'PayPal_BraintreeGiftWrapping' => 1,
-        'PayPal_BraintreeGraphQl' => 1,
-        'ThemeDev_Checkout' => 1,
-        'Training_CronExample' => 1,
-        'Training_DisableObserverExample' => 1,
-        'Training_PluginExample' => 1,
-        'Training_DispatchEventExample' => 1,
-        'Training_ObserverExample' => 1,
-        'Training_DisablePluginExample' => 1
+        'PayPal_BraintreeGraphQl' => 1
+    ],
+    'system' => [
+        'default' => [
+            'design' => [
+                'theme' => [
+                    'theme_id' => 'frontend/MageMastery/custom'
+                ]
+            ]
+        ]
     ]
 ];
