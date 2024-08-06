@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/menu_configuration.xsd">
+    <menu>
+        <add id="Vendor_ContactUs::contact_us" 
+             title="Contact Us" 
+             module="Vendor_ContactUs" 
+             sortOrder="10" 
+             parent="Magento_Backend::content" 
+             action="contactus/index/index" 
+             resource="Vendor_ContactUs::contact_us" />
+    </menu>
+</config>

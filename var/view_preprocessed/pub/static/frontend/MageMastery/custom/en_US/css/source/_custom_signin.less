@@ -6,40 +6,40 @@
     padding: 20px;
 
     .customer-login, .block-new-customer {
-        background-color: #ffffff; /* Fond blanc pour un aspect propre */
+        background-color: #ffffff; /* White background for clean look */
         border-radius: 12px;
         padding: 20px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre légèrement plus profonde pour la profondeur */
-        flex: 1 1 100%; /* Pleine largeur sur les petits écrans */
-        max-width: 400px; /* Limite la largeur pour une meilleure lisibilité */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition en douceur pour les effets d'interaction */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for depth */
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 400px; /* Limit width for better readability */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interaction effects */
 
         &:hover {
-            transform: scale(1.02); /* Agrandir légèrement la carte au survol */
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Accentuer l'ombre au survol */
+            transform: scale(1.02); /* Slightly enlarge the card on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
         }
 
         .page-title, .block-title {
-            text-align: center; /* Alignement centré des titres */
+            text-align: center; /* Center align titles */
             margin-bottom: 20px;
 
             h1, strong {
-                color: #0bf9bc; /* Nouvelle couleur vive */
+                color: #fbc02d; /* Bright yellow color */
                 font-size: 26px;
                 font-weight: bold;
             }
         }
 
         form, .block-content {
-            text-align: center; /* Alignement centré du texte et des éléments */
+            text-align: center; /* Center align text and elements */
 
             .field {
                 margin-bottom: 20px;
 
                 .label {
-                    color: #2c6a4c; /* Mettre à jour la couleur de l'étiquette en vert */
+                    color: #4caf50; /* Update label color to green */
                     font-weight: bold;
-                    font-size: 14px; /* Police légèrement plus petite pour les étiquettes */
+                    font-size: 14px; /* Slightly smaller font for labels */
                 }
 
                 .control {
@@ -49,12 +49,12 @@
                         border-radius: 6px;
                         border: 1px solid #e0e0e0;
                         font-size: 16px;
-                        background-color: #f5f5f5; /* Fond léger pour l'input */
-                        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Effets de transition */
+                        background-color: #f5f5f5; /* Light background for input */
+                        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
 
                         &:focus {
-                            border-color: #2c6a4c; /* Mettre à jour la couleur de la bordure au focus en vert */
-                            box-shadow: 0 0 8px rgba(44, 106, 76, 0.5); /* Mettre à jour l'effet de lueur */
+                            border-color: #4caf50; /* Update focus border color to green */
+                            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Update glow effect */
                             outline: none;
                         }
                     }
@@ -64,13 +64,13 @@
             .actions {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Centrer les actions */
+                align-items: center; /* Center the actions */
                 gap: 10px;
                 margin-top: 20px;
 
                 .action {
                     &.login, &.create-account, &.register {
-                        background: linear-gradient(135deg, #0bf9bc, #a6fcd3); /* Gradient pour les boutons */
+                        background: linear-gradient(135deg, #fbc02d, #f9a825); /* Yellow gradient for buttons */
                         border: none;
                         padding: 14px;
                         border-radius: 6px;
@@ -78,23 +78,23 @@
                         font-size: 16px;
                         cursor: pointer;
                         text-align: center;
-                        transition: background 0.3s ease, transform 0.3s ease; /* Effets de transition */
+                        transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
 
                         &:hover {
-                            background: linear-gradient(135deg, #a6fcd3, #0bf9bc); /* Gradient plus sombre au survol */
-                            transform: scale(1.02); /* Agrandir légèrement au survol */
+                            background: linear-gradient(135deg, #f9a825, #fbc02d); /* Darker gradient on hover */
+                            transform: scale(1.02); /* Slightly enlarge on hover */
                         }
                     }
 
                     &.remind {
-                        color: #0bf9bc; /* Couleur du texte correspondante pour le lien de rappel */
+                        color: #fbc02d; /* Matching text color for reminder link */
                         font-size: 14px;
                         text-decoration: none;
-                        text-align: center; /* Alignement centré du texte */
+                        text-align: center; /* Center align text */
                         transition: color 0.3s ease;
 
                         &:hover {
-                            color: #2c6a4c; /* Vert plus foncé au survol */
+                            color: #f9a825; /* Darker yellow on hover */
                             text-decoration: underline;
                         }
                     }
@@ -106,19 +106,19 @@
     .block-new-customer {
         .block-content {
             p {
-                color: #2c6a4c; /* Mettre à jour la couleur du paragraphe en vert */
+                color: #4caf50; /* Update paragraph color to green */
                 font-size: 14px;
                 margin-bottom: 20px;
-                text-align: center; /* Alignement centré du texte */
+                text-align: center; /* Center align text */
             }
 
             .actions-toolbar {
                 .primary {
-                    text-align: center; /* Alignement centré de l'action */
+                    text-align: center; /* Center align action */
 
                     .action {
                         &.create {
-                            background: linear-gradient(135deg, #0bf9bc, #a6fcd3); /* Gradient pour le bouton */
+                            background: linear-gradient(135deg, #fbc02d, #f9a825); /* Yellow gradient for button */
                             border: none;
                             padding: 14px;
                             border-radius: 6px;
@@ -126,11 +126,11 @@
                             font-size: 16px;
                             cursor: pointer;
                             text-align: center;
-                            transition: background 0.3s ease, transform 0.3s ease; /* Effets de transition */
+                            transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
 
                             &:hover {
-                                background: linear-gradient(135deg, #a6fcd3, #0bf9bc); /* Gradient plus sombre au survol */
-                                transform: scale(1.02); /* Agrandir légèrement au survol */
+                                background: linear-gradient(135deg, #f9a825, #fbc02d); /* Darker gradient on hover */
+                                transform: scale(1.02); /* Slightly enlarge on hover */
                             }
                         }
                     }

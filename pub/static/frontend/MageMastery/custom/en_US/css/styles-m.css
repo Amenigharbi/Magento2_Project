@@ -14393,31 +14393,31 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .customer-login,
 .login-container .block-new-customer {
   background-color: #ffffff;
-  /* Fond blanc pour un aspect propre */
+  /* White background for clean look */
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Ombre légèrement plus profonde pour la profondeur */
+  /* Slightly deeper shadow for depth */
   flex: 1 1 100%;
-  /* Pleine largeur sur les petits écrans */
+  /* Full width on small screens */
   max-width: 400px;
-  /* Limite la largeur pour une meilleure lisibilité */
+  /* Limit width for better readability */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Transition en douceur pour les effets d'interaction */
+  /* Smooth transition for interaction effects */
 }
 .login-container .customer-login:hover,
 .login-container .block-new-customer:hover {
   transform: scale(1.02);
-  /* Agrandir légèrement la carte au survol */
+  /* Slightly enlarge the card on hover */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  /* Accentuer l'ombre au survol */
+  /* Enhance shadow on hover */
 }
 .login-container .customer-login .page-title,
 .login-container .block-new-customer .page-title,
 .login-container .customer-login .block-title,
 .login-container .block-new-customer .block-title {
   text-align: center;
-  /* Alignement centré des titres */
+  /* Center align titles */
   margin-bottom: 20px;
 }
 .login-container .customer-login .page-title h1,
@@ -14428,8 +14428,8 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .block-new-customer .page-title strong,
 .login-container .customer-login .block-title strong,
 .login-container .block-new-customer .block-title strong {
-  color: #0bf9bc;
-  /* Nouvelle couleur vive */
+  color: #fbc02d;
+  /* Bright yellow color */
   font-size: 26px;
   font-weight: bold;
 }
@@ -14438,7 +14438,7 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .customer-login .block-content,
 .login-container .block-new-customer .block-content {
   text-align: center;
-  /* Alignement centré du texte et des éléments */
+  /* Center align text and elements */
 }
 .login-container .customer-login form .field,
 .login-container .block-new-customer form .field,
@@ -14450,11 +14450,11 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .block-new-customer form .field .label,
 .login-container .customer-login .block-content .field .label,
 .login-container .block-new-customer .block-content .field .label {
-  color: #2c6a4c;
-  /* Mettre à jour la couleur de l'étiquette en vert */
+  color: #4caf50;
+  /* Update label color to green */
   font-weight: bold;
   font-size: 14px;
-  /* Police légèrement plus petite pour les étiquettes */
+  /* Slightly smaller font for labels */
 }
 .login-container .customer-login form .field .control input,
 .login-container .block-new-customer form .field .control input,
@@ -14466,18 +14466,18 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   border: 1px solid #e0e0e0;
   font-size: 16px;
   background-color: #f5f5f5;
-  /* Fond léger pour l'input */
+  /* Light background for input */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  /* Effets de transition */
+  /* Transition effects */
 }
 .login-container .customer-login form .field .control input:focus,
 .login-container .block-new-customer form .field .control input:focus,
 .login-container .customer-login .block-content .field .control input:focus,
 .login-container .block-new-customer .block-content .field .control input:focus {
-  border-color: #2c6a4c;
-  /* Mettre à jour la couleur de la bordure au focus en vert */
-  box-shadow: 0 0 8px rgba(44, 106, 76, 0.5);
-  /* Mettre à jour l'effet de lueur */
+  border-color: #4caf50;
+  /* Update focus border color to green */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  /* Update glow effect */
   outline: none;
 }
 .login-container .customer-login form .actions,
@@ -14487,7 +14487,7 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Centrer les actions */
+  /* Center the actions */
   gap: 10px;
   margin-top: 20px;
 }
@@ -14503,8 +14503,8 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .block-new-customer form .actions .action.register,
 .login-container .customer-login .block-content .actions .action.register,
 .login-container .block-new-customer .block-content .actions .action.register {
-  background: linear-gradient(135deg, #0bf9bc, #a6fcd3);
-  /* Gradient pour les boutons */
+  background: linear-gradient(135deg, #fbc02d, #f9a825);
+  /* Yellow gradient for buttons */
   border: none;
   padding: 14px;
   border-radius: 6px;
@@ -14513,7 +14513,7 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   cursor: pointer;
   text-align: center;
   transition: background 0.3s ease, transform 0.3s ease;
-  /* Effets de transition */
+  /* Transition effects */
 }
 .login-container .customer-login form .actions .action.login:hover,
 .login-container .block-new-customer form .actions .action.login:hover,
@@ -14527,46 +14527,46 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
 .login-container .block-new-customer form .actions .action.register:hover,
 .login-container .customer-login .block-content .actions .action.register:hover,
 .login-container .block-new-customer .block-content .actions .action.register:hover {
-  background: linear-gradient(135deg, #a6fcd3, #0bf9bc);
-  /* Gradient plus sombre au survol */
+  background: linear-gradient(135deg, #f9a825, #fbc02d);
+  /* Darker gradient on hover */
   transform: scale(1.02);
-  /* Agrandir légèrement au survol */
+  /* Slightly enlarge on hover */
 }
 .login-container .customer-login form .actions .action.remind,
 .login-container .block-new-customer form .actions .action.remind,
 .login-container .customer-login .block-content .actions .action.remind,
 .login-container .block-new-customer .block-content .actions .action.remind {
-  color: #0bf9bc;
-  /* Couleur du texte correspondante pour le lien de rappel */
+  color: #fbc02d;
+  /* Matching text color for reminder link */
   font-size: 14px;
   text-decoration: none;
   text-align: center;
-  /* Alignement centré du texte */
+  /* Center align text */
   transition: color 0.3s ease;
 }
 .login-container .customer-login form .actions .action.remind:hover,
 .login-container .block-new-customer form .actions .action.remind:hover,
 .login-container .customer-login .block-content .actions .action.remind:hover,
 .login-container .block-new-customer .block-content .actions .action.remind:hover {
-  color: #2c6a4c;
-  /* Vert plus foncé au survol */
+  color: #f9a825;
+  /* Darker yellow on hover */
   text-decoration: underline;
 }
 .login-container .block-new-customer .block-content p {
-  color: #2c6a4c;
-  /* Mettre à jour la couleur du paragraphe en vert */
+  color: #4caf50;
+  /* Update paragraph color to green */
   font-size: 14px;
   margin-bottom: 20px;
   text-align: center;
-  /* Alignement centré du texte */
+  /* Center align text */
 }
 .login-container .block-new-customer .block-content .actions-toolbar .primary {
   text-align: center;
-  /* Alignement centré de l'action */
+  /* Center align action */
 }
 .login-container .block-new-customer .block-content .actions-toolbar .primary .action.create {
-  background: linear-gradient(135deg, #0bf9bc, #a6fcd3);
-  /* Gradient pour le bouton */
+  background: linear-gradient(135deg, #fbc02d, #f9a825);
+  /* Yellow gradient for button */
   border: none;
   padding: 14px;
   border-radius: 6px;
@@ -14575,13 +14575,13 @@ fieldset[disabled] .sidebar .block-addbysku .action.remove {
   cursor: pointer;
   text-align: center;
   transition: background 0.3s ease, transform 0.3s ease;
-  /* Effets de transition */
+  /* Transition effects */
 }
 .login-container .block-new-customer .block-content .actions-toolbar .primary .action.create:hover {
-  background: linear-gradient(135deg, #a6fcd3, #0bf9bc);
-  /* Gradient plus sombre au survol */
+  background: linear-gradient(135deg, #f9a825, #fbc02d);
+  /* Darker gradient on hover */
   transform: scale(1.02);
-  /* Agrandir légèrement au survol */
+  /* Slightly enlarge on hover */
 }
 .customer-register {
   background-color: #f8f9fa;
@@ -14799,6 +14799,117 @@ body {
 .orders-and-returns-page .action.primary {
   background-color: #ff4081 !important;
   /* Force apply */
+}
+/* Styles généraux pour le header */
+.panel.header {
+  background-color: #f8f9fa;
+  /* Couleur de fond du header */
+  padding: 10px 20px;
+  /* Espacement intérieur */
+  border-bottom: 1px solid #dee2e6;
+  /* Bordure inférieure */
+  display: flex;
+  justify-content: space-between;
+  /* Aligner les éléments */
+  align-items: center;
+  /* Aligner verticalement */
+}
+.panel.header a.action.skip.contentarea {
+  font-size: 14px;
+  color: #007bff;
+  /* Couleur du lien */
+  text-decoration: none;
+}
+.panel.header a.action.skip.contentarea span {
+  font-weight: bold;
+}
+/* Styles pour la liste des liens dans le header */
+ul.header.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* Espacement entre les éléments */
+}
+ul.header.links li {
+  position: relative;
+}
+ul.header.links li a {
+  color: #333;
+  /* Couleur du texte des liens */
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  /* Espacement intérieur */
+  display: block;
+}
+/* Styles pour le message de bienvenue */
+li.greet.welcome {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+li.greet.welcome .logged-in {
+  color: #28a745;
+  /* Couleur pour les utilisateurs connectés */
+  font-weight: bold;
+}
+/* Styles pour le menu déroulant du client */
+.customer-welcome {
+  position: relative;
+}
+.customer-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.customer-menu {
+  display: none;
+  /* Masquer le menu par défaut */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  /* Couleur de fond du menu */
+  border: 1px solid #dee2e6;
+  /* Bordure du menu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  /* Ombre du menu */
+  z-index: 1000;
+}
+.customer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.customer-menu ul li {
+  border-bottom: 1px solid #dee2e6;
+}
+.customer-menu ul li a {
+  display: block;
+  padding: 10px 15px;
+  /* Espacement intérieur */
+  color: #333;
+  text-decoration: none;
+}
+.customer-menu ul li a:hover {
+  background-color: #f8f9fa;
+  /* Couleur de survol */
+}
+/* Styles pour le lien de déconnexion */
+li.link.authorization-link a {
+  color: #dc3545;
+  /* Couleur du lien de déconnexion */
+  font-size: 14px;
+  font-weight: bold;
+}
+li.link.authorization-link a:hover {
+  text-decoration: underline;
+}
+/* Afficher le menu lorsque l'utilisateur clique sur "Change" */
+.customer-name[data-action="customer-menu-toggle"] + .customer-menu {
+  display: block;
 }
 .navigation {
   text-align: center;
