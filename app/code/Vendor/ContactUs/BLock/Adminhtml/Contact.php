@@ -10,7 +10,14 @@ class Contact extends Container
         $this->_controller = 'adminhtml_contact';
         $this->_blockGroup = 'Vendor_ContactUs';
         $this->_headerText = __('Contact Us');
-        $this->_addButtonLabel = __('Export to Excel');
+        $this->buttonList->add(
+            'export_csv',
+            [
+                'label' => __('Export to CSV'),
+                'onclick' => "setLocation('" . $this->getUrl('contactus/export/export') . "')",
+                'class' => 'export'
+            ]
+        );
         parent::_construct();
     }
 }

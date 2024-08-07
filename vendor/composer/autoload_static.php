@@ -437,6 +437,10 @@ class ComposerStaticInit26af77faf00b67be9f910e29d782aec2
         array (
             'phpseclib3\\' => 11,
         ),
+        'l' => 
+        array (
+            'libphonenumber\\' => 15,
+        ),
         'Y' => 
         array (
             'Yandex\\Allure\\Adapter\\' => 22,
@@ -977,6 +981,7 @@ class ComposerStaticInit26af77faf00b67be9f910e29d782aec2
             'Gt\\Dom\\' => 7,
             'Gt\\CssXPath\\' => 12,
             'GraphQL\\' => 8,
+            'Giggsey\\Locale\\' => 15,
         ),
         'F' => 
         array (
@@ -1036,6 +1041,10 @@ class ComposerStaticInit26af77faf00b67be9f910e29d782aec2
         'phpseclib3\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'libphonenumber\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/libphonenumber-for-php/src',
         ),
         'Yandex\\Allure\\Adapter\\' => 
         array (
@@ -3057,6 +3066,10 @@ class ComposerStaticInit26af77faf00b67be9f910e29d782aec2
         'GraphQL\\' => 
         array (
             0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
+        ),
+        'Giggsey\\Locale\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/giggsey/locale/src',
         ),
         'Firebase\\JWT\\' => 
         array (

@@ -499,6 +499,30 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'giggsey/libphonenumber-for-php' => array(
+            'pretty_version' => '8.13.42',
+            'version' => '8.13.42.0',
+            'reference' => 'b7ee848bbd1958ff7464522d5c6e3688cca2a125',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../giggsey/libphonenumber-for-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'giggsey/libphonenumber-for-php-lite' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '8.13.42',
+            ),
+        ),
+        'giggsey/locale' => array(
+            'pretty_version' => '2.6',
+            'version' => '2.6.0.0',
+            'reference' => '37874fa473131247c348059fb7b8985efc18b5ea',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../giggsey/locale',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'google/recaptcha' => array(
             'pretty_version' => '1.3.0',
             'version' => '1.3.0.0',

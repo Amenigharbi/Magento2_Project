@@ -3,7 +3,9 @@
   "version": "2.4.3",
   "description": "Magento 2",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "libphonenumber-js": "^1.11.5"
+  },
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",

@@ -3,7 +3,9 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Vendor_ContactUs::contact_us" title="Contact Us" sortOrder="10" />
+                <resource id="Vendor_ContactUs::contact_us" title="Contact Us" sortOrder="10" >
+                    <resource id="Vendor_ContactUs::export" title="Export" sortOrder="20"/>
+                </resource>
             </resource>
         </resources>
     </acl>

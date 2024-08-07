@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'tubalmartin\\CssMin\\' => array($vendorDir . '/tubalmartin/cssmin/src'),
     'phpseclib3\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'libphonenumber\\' => array($vendorDir . '/giggsey/libphonenumber-for-php/src'),
     'Yandex\\Allure\\Adapter\\' => array($vendorDir . '/allure-framework/allure-php-commons/src/Legacy'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Webimpress\\SafeWriter\\' => array($vendorDir . '/webimpress/safe-writer/src'),
@@ -513,6 +514,7 @@ return array(
     'Gt\\Dom\\' => array($vendorDir . '/phpgt/dom/src'),
     'Gt\\CssXPath\\' => array($vendorDir . '/phpgt/cssxpath/src'),
     'GraphQL\\' => array($vendorDir . '/webonyx/graphql-php/src'),
+    'Giggsey\\Locale\\' => array($vendorDir . '/giggsey/locale/src'),
     'Firebase\\JWT\\' => array($vendorDir . '/firebase/php-jwt/src'),
     'Fidry\\CpuCoreCounter\\' => array($vendorDir . '/fidry/cpu-core-counter/src'),
     'Facebook\\WebDriver\\' => array($vendorDir . '/php-webdriver/webdriver/lib'),
