@@ -1,0 +1,265 @@
+.block-search {
+    width: 350px !important;
+    margin: 30px auto 30px 450px; /* Consider changing to `margin: 20px auto;` for better centering */
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.block-search input[type="text"] {
+    flex-grow: 1;
+    height: 100%; /* Updated to 100% for consistency */
+    width: 308px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none; /* Added to remove default border */
+    //border-radius: 10px 0 0 10px; /* Added for better rounding */
+}
+
+.block-search input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.block-search button {
+    height: 100%; /* Updated to 100% for consistency */
+    width: 60px;
+    border: none;
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0; /* Updated for consistency with input */
+    transition: background-color 0.3s;
+}
+
+.block-search button:hover {
+    background-color: #e0356f; /* Added hover effect */
+}
+
+
+.navigation {
+    background: white;
+    font-weight: 700;
+    height: inherit;
+    left: auto;
+    overflow: inherit;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+//liste produits 
+
+.product-item {
+    font-size: 1.7rem;
+    line-height: normal;
+    letter-spacing: normal;
+    vertical-align: top;
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 15px; /* Add padding */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 20px; /* Space between product items */
+    position: relative; /* Ensure positioning context for .product-item-actions */
+}
+
+.product-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    border-color: #ff4081; /* Change border color on hover */
+}
+
+.product-item-actions {
+    position: absolute; /* Position it within the product-item */
+    bottom: 0px; /* Move the button container lower */
+    left: 15px; /* Space from the left */
+    right: 15px; /* Space from the right */
+    display: flex;
+    justify-content: center;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.product-item:hover .product-item-actions {
+    opacity: 1; /* Show on hover */
+}
+
+.action.tocart.primary {
+    background-color: #ff4081; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 1.4rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.action.tocart.primary:hover {
+    background-color: #e03a6c; /* Darker shade on hover */
+}
+
+
+///Oerder and returns 
+
+
+.orders-and-returns-page {
+    font-size: 16px; /* Default font size */
+    font-family: Arial, sans-serif; /* Default font family */
+    color: #333; /* Default text color */
+}
+
+/* Customize specific elements if needed */
+.orders-and-returns-page h1,
+.orders-and-returns-page h2,
+.orders-and-returns-page h3 {
+    font-family: 'Open Sans', sans-serif; /* Example font family for headings */
+    color: #ff4081; /* Example color for headings */
+}
+
+.orders-and-returns-page p {
+    font-size: 14px; /* Example font size for paragraphs */
+    line-height: 1.6; /* Example line height for paragraphs */
+}
+
+.orders-and-returns-page .action.primary {
+    background-color: #ff4081; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 3px; /* Button rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1.2rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.orders-and-returns-page .action.primary:hover {
+    background-color: #e03a6c; /* Darker shade on hover */
+}
+.orders-and-returns-page .action.primary {
+    background-color: #ff4081 !important; /* Force apply */
+}
+
+/* Styles généraux pour le header */
+.panel.header {
+    background-color: #f8f9fa; /* Couleur de fond du header */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-bottom: 1px solid #dee2e6; /* Bordure inférieure */
+    display: flex;
+    justify-content: space-between; /* Aligner les éléments */
+    align-items: center; /* Aligner verticalement */
+}
+
+.panel.header a.action.skip.contentarea {
+    font-size: 14px;
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none;
+}
+
+.panel.header a.action.skip.contentarea span {
+    font-weight: bold;
+}
+
+/* Styles pour la liste des liens dans le header */
+ul.header.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+ul.header.links li {
+    position: relative;
+}
+
+ul.header.links li a {
+    color: #333; /* Couleur du texte des liens */
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px; /* Espacement intérieur */
+    display: block;
+}
+
+/* Styles pour le message de bienvenue */
+li.greet.welcome {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+li.greet.welcome .logged-in {
+    color: #28a745; /* Couleur pour les utilisateurs connectés */
+    font-weight: bold;
+}
+
+/* Styles pour le menu déroulant du client */
+.customer-welcome {
+    position: relative;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.customer-menu {
+    display: none; /* Masquer le menu par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* Couleur de fond du menu */
+    border: 1px solid #dee2e6; /* Bordure du menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Ombre du menu */
+    z-index: 1000;
+}
+
+.customer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.customer-menu ul li {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.customer-menu ul li a {
+    display: block;
+    padding: 10px 15px; /* Espacement intérieur */
+    color: #333;
+    text-decoration: none;
+}
+
+.customer-menu ul li a:hover {
+    background-color: #f8f9fa; /* Couleur de survol */
+}
+
+/* Styles pour le lien de déconnexion */
+li.link.authorization-link a {
+    color: #dc3545; /* Couleur du lien de déconnexion */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li.link.authorization-link a:hover {
+    text-decoration: underline;
+}
+
+/* Afficher le menu lorsque l'utilisateur clique sur "Change" */
+.customer-name[data-action="customer-menu-toggle"] + .customer-menu {
+    display: block;
+}
+

@@ -1,0 +1,15 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1723059545;s:6:"expire";i:1723145945;s:4:"tags";s:45:"5f9_BLOCK_HTML,5f9_CAT_P_4,5f9_CAT_P,5f9_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="4" data-price-box="product-id-4">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+         itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <span  id="product-price-4"                data-price-amount="5200"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">TND 5,200.00</span></span>
+                <meta itemprop="price" content="5200" />
+        <meta itemprop="priceCurrency" content="TND" />
+    </span>
+
+</div>

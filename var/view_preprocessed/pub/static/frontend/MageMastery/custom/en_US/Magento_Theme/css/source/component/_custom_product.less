@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap.less');
+
+.product-info-main {
+    font-family: 'Open Sans', sans-serif;
+
+    .product-title {
+        font-size: 32px; /* Slightly larger font size for better prominence */
+        color: #ff6f61; /* Coral color for a vibrant touch */
+        font-weight: 700; /* Bold font weight for emphasis */
+        margin-bottom: 15px; /* Increased space below the title */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .price {
+        font-size: 24px; /* Larger font size for better readability */
+        color: #28a745; /* Green color for the price */
+        font-weight: 600; /* Semi-bold font weight */
+        margin-bottom: 25px; /* Increased space below the price */
+        padding: 5px 10px; /* Padding to highlight the price */
+        background-color: #f0f8f4; /* Light background to make the price stand out */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .description {
+        background-color: #ffffff; /* Clean white background */
+        color: #333333; /* Dark gray text color for readability */
+        padding: 25px; /* Increased padding for a more spacious feel */
+        border: 1px solid #e0e0e0; /* Light gray border for definition */
+        border-radius: 10px; /* More rounded corners for a modern look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for more depth */
+        font-size: 18px; /* Standard text size */
+        line-height: 1.8; /* Increased line height for better readability */
+        font-family: Georgia, serif;
+    }
+
+    .product-add-form {
+        .action.primary {
+            background-color: #ff4081; /* Vibrant pink color for the button */
+            border: none;
+            padding: 14px 28px; /* Larger padding for a better button size */
+            font-size: 20px; /* Slightly larger font size */
+            color: #ffffff; /* White text color */
+            border-radius: 8px; /* More rounded corners for a softer look */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transitions for hover effects */
+            text-transform: uppercase; /* Uppercase text for emphasis */
+            font-weight: 700; /* Bold font weight */
+            cursor: pointer; /* Pointer cursor to indicate it's clickable */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+            &:hover {
+                background-color: #c2185b; /* Darker pink color on hover */
+                transform: scale(1.05); /* Slightly enlarge button on hover */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+            }
+        }
+    }
+}
+
+
+.custom-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center-align items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 20px; /* Space below the block */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+
+    .custom-block-left,
+    .custom-block-right {
+        flex: 1; /* Allow columns to grow and fill available space */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+        margin: 0 10px; /* Add horizontal spacing between columns */
+    }
+
+    .custom-block-left {
+        display: flex;
+        flex-direction: column; /* Align text content vertically */
+        justify-content: center; /* Center text vertically */
+        padding-right: 20px; /* Space between text and image */
+    }
+
+    .custom-block-right {
+        display: flex;
+        align-items: center; /* Center image vertically */
+        justify-content: center; /* Center image horizontally */
+    }
+
+    .custom-block-right img {
+        max-width: 100%; /* Ensure image scales correctly within column */
+        height: auto;
+        border-radius: 10px; /* Rounded corners for image */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    .custom-block-right img:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+    }
+
+    .custom-block-left p {
+        font-size: 18px; /* Larger font size */
+        color: #333; /* Text color */
+        line-height: 1.5; /* Improved readability */
+        margin: 0; /* Remove default margin */
+        text-align: justify; /* Justify text alignment */
+        font-family: CamptonRounded-Light;
+    }
+}
+
+.custom-block-left-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center-align items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 20px; /* Space below the block */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px; /* Space between the text and the image */
+}
+
+.custom-block-left-image-left,
+.custom-block-left-image-right {
+    flex: 1; /* Allow columns to grow and fill available space */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.custom-block-left-image-left {
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    max-width: 50%; /* Ensure the image takes up to 50% of the container */
+}
+
+.custom-block-left-image-left img {
+    max-width: 100%; /* Ensure image scales correctly within column */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-block-left-image-left img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.custom-block-left-image-right {
+    display: flex;
+    flex-direction: column; /* Align text content vertically */
+    justify-content: center; /* Center text vertically */
+    max-width: 50%; /* Ensure the text takes up to 50% of the container */
+}
+
+.custom-block-left-image-right p {
+    font-size: 18px; /* Larger font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Improved readability */
+    margin: 0; /* Remove default margin */
+    text-align: justify; /* Justify text alignment */
+    font-family: CamptonRounded-Light; /* Ensure the correct font is used */
+}
+.custom-block-left p,
+.custom-block-left h2 {
+    font-size: 18px; /* Ensure consistent font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Improved readability */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text horizontally */
+    font-family: CamptonRounded-Light; /* Ensure the correct font is used */
+}
+
+.custom-block-left-image-right p,
+.custom-block-left-image-right h2 {
+    font-size: 18px; /* Ensure consistent font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Improved readability */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text horizontally */
+    font-family: CamptonRounded-Light; /* Ensure the correct font is used */
+}
+
+
+.banner {
+    width: 1000px; /* Fixed width to match the custom blocks */
+    height: 400px; /* Adjust height as needed */
+    margin-bottom: 20px; /* Space below the banner */
+    overflow: hidden; /* Ensure content doesn’t overflow */
+    border-radius: 10px; /* Rounded corners for the banner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    display: flex;
+    align-items: center; /* Center the banner content vertically */
+    justify-content: center; /* Center the banner content horizontally */
+
+    img {
+        max-width: 90%; /* Ensure image scales correctly within banner */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for image */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    img:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+    }
+}
+
+
+.top-nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.top-nav a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    background-color: #444;
+}
+
+

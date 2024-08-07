@@ -1,0 +1,97 @@
+.navigation {
+    text-align: center;
+    background-color: #0bf9bc; /* Nouveau fond pour la barre de navigation */
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+
+    .ui-menu {
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+
+        .category-item {
+            position: relative;
+            margin: 0 15px;
+            transition: transform 0.3s ease; /* Effet de transformation en douceur */
+
+            a {
+                text-decoration: none;
+                color: #2c6a4c; /* Nouvelle couleur du texte */
+                padding: 10px 20px;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+                position: relative;
+
+                &:hover {
+                    background-color: #a6fcd3; /* Nouveau fond sur survol */
+                    color: #2c6a4c; /* Nouvelle couleur du texte sur survol */
+                    transform: scale(1.05); /* Agrandir légèrement sur survol */
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #2c6a4c; /* Nouvel effet de soulignement */
+                    transition: width 0.3s ease;
+                    transform: translateX(-50%);
+                }
+
+                &:hover::after {
+                    width: 100%; /* Le soulignement s'étend sur survol */
+                }
+            }
+
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #a6fcd3; /* Nouveau fond pour les sous-menus */
+                border-radius: 8px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+                padding: 0;
+                margin: 0;
+
+                .ui-menu-item {
+                    border-bottom: 1px solid #eee;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        color: #2c6a4c; /* Nouvelle couleur du texte pour les sous-menus */
+                        font-size: 14px;
+
+                        &:hover {
+                            background-color: #0bf9bc; /* Nouveau fond sur survol */
+                            color: #2c6a4c; /* Nouvelle couleur du texte sur survol */
+                        }
+                    }
+                }
+            }
+
+            &:hover .submenu {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

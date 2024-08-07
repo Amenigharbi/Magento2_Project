@@ -1,0 +1,307 @@
+
+.cms-home {
+      margin-left: 0;
+      .nav-sections {
+          margin-bottom: 0;
+      }
+      .page-main {
+          padding-left: 0;
+          padding-right: 0;
+          max-width: 1900px;
+          
+      }
+      .column.main {
+          padding-bottom: 0;
+          display: inline-block;
+          margin-bottom: 20px;
+      }
+}
+
+.viewed-items {
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px; /* Rounded corners for a softer look */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+
+      .viewed-items-container {
+          padding: 20px;
+      }
+
+      .header-title {
+          font-size: 26px;
+          padding: 15px 0;
+          color: #333; /* Darker color for better readability */
+          font-weight: bold; /* Emphasize title */
+      }
+
+      .content-row {
+          display: flex;
+          align-items: center; /* Center items vertically */
+
+          .column {
+              flex: 1;
+          }
+          .text {
+              margin-right: 30px;
+              font-size: 14px;
+              color: #666; /* Slightly lighter text color */
+          }
+          .view-history {
+              width: 110px;
+              font-size: 12px;
+              text-align: center; /* Center text inside button */
+              border: 1px solid #ddd; /* Light border */
+              border-radius: 5px; /* Rounded corners */
+              padding: 5px 10px;
+              background-color: #f9f9f9;
+              color: #333;
+              transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+          }
+          .view-history:hover {
+              background-color: #eee;
+              color: #000; /* Darker text color on hover */
+          }
+      }
+  }
+
+  .gototop {
+      padding: 0 0 25px;
+      a {
+          text-align: center;
+          padding: 20px;
+          color: #ffffff;
+          background: #f9cde8;
+          display: block;
+          margin-bottom: 35px;
+          font-size: 25px;
+          border-radius: 5px; /* Rounded corners */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+      }
+
+      a:hover {
+          text-decoration: none;
+          background-color: lighten(hsl(323, 95%, 86%), 10%);
+          transform: scale(1.02); /* Slight zoom effect */
+      }
+  }
+
+  .content-element-container {
+      margin-bottom: 20px;
+  }
+  .element-container {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .element-header-container {
+      .header-text {
+          float: left;
+          margin-left: 50px;
+          font-size: 20px;
+          color: #333; /* Darker text color */
+      }
+      a.learn-more {
+          margin-top: 10px;
+          font-size: 12px;
+          display: inline-block;
+          margin-left: 15px;
+          color: #ff4081; /* Match the theme color */
+          text-decoration: underline;
+          transition: color 0.3s ease; /* Smooth color transition */
+      }
+      a.learn-more:hover {
+          color: #c2185b; /* Slightly darker pink on hover */
+      }
+  }
+
+  .product-list-slider {
+      display: flex;
+      margin: 20px;
+      overflow-x: auto; /* Allow horizontal scrolling for overflow content */
+      padding-bottom: 20px; /* Add padding to ensure content doesn't touch the edges */
+
+      .product-container {
+          flex: 1;
+          text-align: center;
+          margin: 0 10px; /* Space between products */
+          border-radius: 10px; /* Rounded corners */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          transition: transform 0.3s ease; /* Smooth zoom effect */
+          &:hover {
+              transform: scale(1.02); /* Slight zoom effect */
+          }
+          .title {
+              font-weight: 600;
+              color: #333; /* Darker text color */
+          }
+          .icons {
+              margin-top: 10px;
+              width: 200px;
+              height: 158px;
+          }
+      }
+  }
+
+  .trending {
+      .product-container {
+          margin: 15px;
+      }
+  }
+
+  .sign-in {
+      text-align: center;
+      padding: 10px 25px;
+      border: 1px solid #f7c6c7; /* Light pink border */
+      background-image: linear-gradient(#fbd8e1, #f9c0cb); /* Baby pink gradient */
+      display: inline-block;
+      border-radius: 5px;
+      color: #333; /* Dark text color for contrast */
+      text-decoration: none; /* Remove underline */
+      font-size: 16px; /* Increased font size */
+      font-weight: bold; /* Bold text for emphasis */
+      transition: background-image 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .sign-in:hover {
+      background-image: linear-gradient(#f9c0cb, #f7a0a1); /* Slightly darker pink gradient on hover */
+      color: #ffffff; /* White text color on hover */
+      text-decoration: none; /* Ensure no underline on hover */
+  }
+  .header-banner {
+    .header-banner__slider {
+        min-height: 700px;
+        background: url('../images/bann.jpg') center center/cover no-repeat;
+        position: relative;
+        padding: 40px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+            height: 100%;
+            
+            z-index: 1;
+        }
+
+        .banner {
+            position: relative;
+            text-align: left;
+            color: #ffffff;
+            display: block;
+            padding: 20px;
+            width: 500px;
+            margin-top: 55px;
+            z-index: 2;
+
+            .header-text {
+                font-size: 60px;
+                font-weight: 600;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+                margin-bottom: 10px;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            .header-text:hover {
+                color: #ffcc00; /* Change color on hover */
+                transform: translateY(-5px); /* Move text up slightly on hover */
+            }
+
+            .btn-primary {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #ff6600;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                margin-top: 20px;
+                position: relative;
+            }
+
+            .btn-primary::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                transition: opacity 0.3s ease;
+                opacity: 0;
+                z-index: 1;
+            }
+
+            .btn-primary:hover {
+                background-color: #ff8533;
+                transform: translateY(-5px);
+            }
+
+            .btn-primary:hover::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+      .header-banner__deals {
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+
+          .deal {
+              flex: 1;
+              background: #ffffff;
+              margin: 10px;
+              border-radius: 19px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+              .deal__element {
+                  padding: 15px;
+                  margin-right: 15px;
+              }
+              .header {
+                  font-weight: 600;
+                  font-size: 20px;
+                  color: #333; /* Darker text color */
+              }
+
+              .deal-image {
+                  height: 305px;
+                  width: 270px;
+                  display: block;
+                  margin: 10px 0 15px 0;
+                  border-radius: 13px;
+                  object-fit: cover; /* Ensure images cover their containers */
+              }
+          }
+      }
+
+
+
+      .top-nav {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .top-nav a {
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .top-nav a:hover {
+        background-color: #444;
+    }

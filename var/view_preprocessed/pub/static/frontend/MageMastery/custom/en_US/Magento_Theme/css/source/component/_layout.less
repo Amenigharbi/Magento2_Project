@@ -1,0 +1,204 @@
+// Common
+// _____________________________________________
+
+  .header-after {
+      padding: 20px;
+      color: #fff;
+      background: white;
+    //border-bottom: 0px solid #f7a0a1; /* Slightly darker border for definition */
+
+      .header-block-container {
+          a, a:visited {
+              color: #f9cde8;
+              text-decoration: none; /* Ensure links are not underlined */
+          }
+          .shop-deals {
+              font-size: 26px;
+              float: right;
+              font-weight: 600;
+          }
+          .deliver {
+              display: inline-block;
+              padding-top: 15px;
+              font-size: 14px; /* Consistent font size */
+          }
+      }
+  }
+
+  .header.content {
+      max-width: none !important;
+      background: white;
+      color: #fff !important;
+
+      a, a:visited {
+          color: #fff !important;
+      }
+
+
+
+      .minicart-wrapper {
+          position: absolute;
+          top: 20px;
+          right: 40px;
+
+          .showcart:after {
+              content: 'Cart';
+              padding-right: 5px;
+              color: #f9cde8;
+              font-size: 16px;
+              font-weight: 500;
+              top: 8px;
+              position: relative;
+          }
+          .showcart:before {
+              color: #f9cde8;
+          }
+      }
+  }
+
+  .footer.content {
+      padding: 20px 40px;
+      background: #f9cde8;
+      margin-top: 0;
+      border-top: none;
+
+      .links {
+          padding: 0;
+          li a {
+              font-size: 12px;
+              color: #fff; /* White text color */
+          }
+      }
+      a, a:visited {
+          color: #fff;
+      }
+
+      .header-title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 10px;
+      }
+  }
+
+  .footer-copyright {
+      padding: 20px;
+      background: #f9cde8;
+      text-align: center;
+      .footer-copyright-container {
+          color: #fff; /* White text color */
+          font-size: 12px;
+          display: flex;
+          justify-content: space-between; /* Space between copyright and links */
+          align-items: center;
+
+          .copyright {
+              text-align: left;
+          }
+
+          .extra-links {
+              text-align: right;
+
+              a, a:visited {
+                  color: #fff;
+                  margin-right: 15px;
+              }
+          }
+      }
+  }
+
+  .footer-switcher {
+      border-top: 1px solid #f7a0a1; /* Slightly darker border */
+      background: #f9cde8;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+
+      .switcher-content {
+          display: flex;
+          justify-content: center; /* Center switcher items */
+      }
+      .switcher-content__item {
+          margin: 0 10px;
+          .amazon-logo {
+              text-align: right;
+          }
+          .switcher-links {
+              text-align: left;
+              margin-left: 30px;
+          }
+          a {
+              border: 1px solid #f7a0a1; /* Slightly darker border */
+              padding: 10px;
+              border-radius: 3px;
+              color: #fff;
+              display: inline-block;
+              transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+              &:hover {
+                  background-color: #f7a0a1; /* Darker pink on hover */
+                  color: #fff;
+              }
+              &.language {
+                  &:before {
+                      content: url('../images/globe.png');
+                      vertical-align: middle;
+                      display: inline-block;
+                      margin-right: 5px;
+                  }
+              }
+              &.currency {
+                  &:before {
+                      content: '$';
+                      vertical-align: middle;
+                      display: inline-block;
+                      margin-right: 5px;
+                  }
+              }
+              &.country {
+                  &:before {
+                      content: url('../images/usa-flag.png');
+                      vertical-align: middle;
+                      display: inline-block;
+                      margin-right: 5px;
+                  }
+              }
+          }
+      }
+  }
+
+  .page-wrapper {
+      background: #ffffff; /* Neutral white background */
+  }
+
+  .page-footer {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 25px;
+      border-top: 1px solid #e8e8e8; /* Light border at the top */
+  }
+
+  .page-header .panel.wrapper {
+    border-bottom: 0px solid #e8e8e8;
+    background-color: white;
+    color: #f9cde8;
+}
+
+
+.top-nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.top-nav a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    background-color: #444;
+}
+
+
