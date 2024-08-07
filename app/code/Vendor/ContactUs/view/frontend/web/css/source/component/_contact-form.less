@@ -1,0 +1,94 @@
+// _contact-form.less
+
+@form-background-color: #f9f9f9;
+@border-color: #ddd;
+@input-border-color: #ccc;
+@button-bg-color: #9eee87;
+@button-bg-color-hover: #00b357;
+@text-color: #333;
+@title-color: #000; // Couleur du titre
+
+// Style général du formulaire
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto; // Centre le formulaire horizontalement
+    padding: 20px;
+    border: 1px solid @border-color;
+    border-radius: 8px;
+    background-color: @form-background-color;
+
+    // Centre le formulaire verticalement
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Style du titre
+#contact-form h2 {
+    text-align: center; // Centre le titre
+    color: @title-color;
+    margin-bottom: 20px; // Espace sous le titre
+}
+
+// Style des champs du formulaire
+#contact-form div {
+    margin-bottom: 15px;
+}
+
+// Style des labels
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: @text-color;
+}
+
+// Style des champs de saisie
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid @input-border-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+// Style du champ de texte
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+// Style du bouton de soumission
+#contact-form button {
+    background-color: @button-bg-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+// Style du bouton au survol
+#contact-form button:hover {
+    background-color: @button-bg-color-hover;
+}
+
+// Style responsive
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 10px;
+    }
+    
+    #contact-form textarea {
+        height: 120px;
+    }
+    
+    #contact-form button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
