@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1723059549;s:6:"expire";i:1723063149;s:4:"tags";s:43:"5f9_STORE,5f9_CMS_B,5f9_BLOCK_HTML,5f9_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1723138986;s:6:"expire";i:1723142586;s:4:"tags";s:43:"5f9_STORE,5f9_CMS_B,5f9_BLOCK_HTML,5f9_MAGE";}
 <footer class="footer">
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
@@ -129,20 +129,16 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1723059549;s:6:"expire";i:1723063149;s:4:"t
             <a href="#" class="brand">Brand</a>
             <ul class="media-icons">
                 <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com"><i class="fa-brands fa-github"></i></a></li>
             </ul>
         </div>
         <div class="col2">
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="http://mage2rock.magento.com/">Home</a></li>
+                <li><a href="http://mage2rock.magento.com/contactus/index/">Contact</a></li>
             </ul>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem excepturi ipsam unde obcaecati iusto velit labore consequuntur officiis aut neque?</p>
+            <p>Makali is committed to delivering high-quality products and exceptional customer service. We value innovation, integrity, and sustainability in all our business practices.</p>
         </div>
         <div class="col3">
             <p>Subscribe to our newsletter</p>
@@ -153,16 +149,16 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1723059549;s:6:"expire";i:1723063149;s:4:"t
                 </div>
             </form>
             <ul class="services-icons">
-                <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google-pay"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                <li><a href="https://www.paypal.com/fr/home"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                <li><a href="https://www.apple.com/fr/apple-pay/"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                <li><a href="https://pay.google.com/intl/fr_fr/about/"><i class="fa-brands fa-google-pay"></i></a></li>
+                <li><a href="https://pay.amazon.fr/"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="mekk">
-            <p>@Makali 2023 - All Rights Reserved</p>
+            <p>@Makali 2024 - All Rights Reserved</p>
         </div>
     </div>
 </footer>

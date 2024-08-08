@@ -14221,140 +14221,6 @@ button.braintree-googlepay-button.black.long {
 .header.content a:visited {
   color: #fff !important;
 }
-.header.content .minicart-wrapper {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
-.header.content .minicart-wrapper .showcart:after {
-  content: 'Cart';
-  padding-right: 5px;
-  color: #f9cde8;
-  font-size: 16px;
-  font-weight: 500;
-  top: 8px;
-  position: relative;
-}
-.header.content .minicart-wrapper .showcart:before {
-  color: #f9cde8;
-}
-.footer.content {
-  padding: 20px 40px;
-  background: #f9cde8;
-  margin-top: 0;
-  border-top: none;
-}
-.footer.content .links {
-  padding: 0;
-}
-.footer.content .links li a {
-  font-size: 12px;
-  color: #fff;
-  /* White text color */
-}
-.footer.content a,
-.footer.content a:visited {
-  color: #fff;
-}
-.footer.content .header-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
-}
-.footer-copyright {
-  padding: 20px;
-  background: #f9cde8;
-  text-align: center;
-}
-.footer-copyright .footer-copyright-container {
-  color: #fff;
-  /* White text color */
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  /* Space between copyright and links */
-  align-items: center;
-}
-.footer-copyright .footer-copyright-container .copyright {
-  text-align: left;
-}
-.footer-copyright .footer-copyright-container .extra-links {
-  text-align: right;
-}
-.footer-copyright .footer-copyright-container .extra-links a,
-.footer-copyright .footer-copyright-container .extra-links a:visited {
-  color: #fff;
-  margin-right: 15px;
-}
-.footer-switcher {
-  border-top: 1px solid #f7a0a1;
-  /* Slightly darker border */
-  background: #f9cde8;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-.footer-switcher .switcher-content {
-  display: flex;
-  justify-content: center;
-  /* Center switcher items */
-}
-.footer-switcher .switcher-content__item {
-  margin: 0 10px;
-}
-.footer-switcher .switcher-content__item .amazon-logo {
-  text-align: right;
-}
-.footer-switcher .switcher-content__item .switcher-links {
-  text-align: left;
-  margin-left: 30px;
-}
-.footer-switcher .switcher-content__item a {
-  border: 1px solid #f7a0a1;
-  /* Slightly darker border */
-  padding: 10px;
-  border-radius: 3px;
-  color: #fff;
-  display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  /* Smooth transition */
-}
-.footer-switcher .switcher-content__item a:hover {
-  background-color: #f7a0a1;
-  /* Darker pink on hover */
-  color: #fff;
-}
-.footer-switcher .switcher-content__item a.language:before {
-  content: url('../images/globe.png');
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 5px;
-}
-.footer-switcher .switcher-content__item a.currency:before {
-  content: '$';
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 5px;
-}
-.footer-switcher .switcher-content__item a.country:before {
-  content: url('../images/usa-flag.png');
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 5px;
-}
-.page-wrapper {
-  background: #ffffff;
-  /* Neutral white background */
-}
-.page-footer {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 25px;
-  border-top: 1px solid #e8e8e8;
-  /* Light border at the top */
-}
 .page-header .panel.wrapper {
   border-bottom: 0px solid #e8e8e8;
   background-color: white;
@@ -14371,7 +14237,7 @@ button.braintree-googlepay-button.black.long {
   text-decoration: none;
 }
 .top-nav a:hover {
-  background-color: #444;
+  background-color: #ffffff;
 }
 .cms-home {
   margin-left: 0;
@@ -14442,30 +14308,6 @@ button.braintree-googlepay-button.black.long {
   color: #000;
   /* Darker text color on hover */
 }
-.gototop {
-  padding: 0 0 25px;
-}
-.gototop a {
-  text-align: center;
-  padding: 20px;
-  color: #ffffff;
-  background: #f9cde8;
-  display: block;
-  margin-bottom: 35px;
-  font-size: 25px;
-  border-radius: 5px;
-  /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  /* Smooth transitions */
-}
-.gototop a:hover {
-  text-decoration: none;
-  background-color: #feebf7;
-  transform: scale(1.02);
-  /* Slight zoom effect */
-}
 .content-element-container {
   margin-bottom: 20px;
 }
@@ -14489,14 +14331,14 @@ button.braintree-googlepay-button.black.long {
   font-size: 12px;
   display: inline-block;
   margin-left: 15px;
-  color: #ff4081;
+  color: #6dff40;
   /* Match the theme color */
   text-decoration: underline;
   transition: color 0.3s ease;
   /* Smooth color transition */
 }
 .element-header-container a.learn-more:hover {
-  color: #c2185b;
+  color: #18c25c;
   /* Slightly darker pink on hover */
 }
 .product-list-slider {
@@ -14536,39 +14378,9 @@ button.braintree-googlepay-button.black.long {
 .trending .product-container {
   margin: 15px;
 }
-.sign-in {
-  text-align: center;
-  padding: 10px 25px;
-  border: 1px solid #f7c6c7;
-  /* Light pink border */
-  background-image: linear-gradient(#fbd8e1, #f9c0cb);
-  /* Baby pink gradient */
-  display: inline-block;
-  border-radius: 5px;
-  color: #333;
-  /* Dark text color for contrast */
-  text-decoration: none;
-  /* Remove underline */
-  font-size: 16px;
-  /* Increased font size */
-  font-weight: bold;
-  /* Bold text for emphasis */
-  transition: background-image 0.3s ease, color 0.3s ease;
-  /* Smooth transition for hover effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
-}
-.sign-in:hover {
-  background-image: linear-gradient(#f9c0cb, #f7a0a1);
-  /* Slightly darker pink gradient on hover */
-  color: #ffffff;
-  /* White text color on hover */
-  text-decoration: none;
-  /* Ensure no underline on hover */
-}
 .header-banner .header-banner__slider {
   min-height: 700px;
-  background: url('../images/bann.jpg') center center / cover no-repeat;
+  background: url('../images/cosm.jpg') center center / cover no-repeat;
   position: relative;
   padding: 40px;
 }
@@ -14688,7 +14500,7 @@ button.braintree-googlepay-button.black.long {
 .product-info-main .product-title {
   font-size: 32px;
   /* Slightly larger font size for better prominence */
-  color: #ff6f61;
+  color: #a7645e;
   /* Coral color for a vibrant touch */
   font-weight: 700;
   /* Bold font weight for emphasis */
@@ -14735,7 +14547,7 @@ button.braintree-googlepay-button.black.long {
   font-family: Georgia, serif;
 }
 .product-info-main .product-add-form .action.primary {
-  background-color: #ff4081;
+  background-color: #0da362;
   /* Vibrant pink color for the button */
   border: none;
   padding: 14px 28px;
@@ -14758,7 +14570,7 @@ button.braintree-googlepay-button.black.long {
   /* Subtle shadow for depth */
 }
 .product-info-main .product-add-form .action.primary:hover {
-  background-color: #c2185b;
+  background-color: #18c27b;
   /* Darker pink color on hover */
   transform: scale(1.05);
   /* Slightly enlarge button on hover */
@@ -15216,7 +15028,7 @@ button.braintree-googlepay-button.black.long {
   margin-top: 20px;
 }
 .customer-register .register-container form .actions .action.register {
-  background-color: #EDA8CC;
+  background-color: #47dd81;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -15225,50 +15037,7 @@ button.braintree-googlepay-button.black.long {
   cursor: pointer;
 }
 .customer-register .register-container form .actions .action.register:hover {
-  background-color: #EDA8CC;
-}
-.block-search {
-  width: 350px !important;
-  margin: 30px auto 30px 450px;
-  /* Consider changing to `margin: 20px auto;` for better centering */
-  border-radius: 10px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  padding: 0 10px;
-}
-.block-search input[type="text"] {
-  flex-grow: 1;
-  height: 100%;
-  /* Updated to 100% for consistency */
-  width: 308px;
-  outline: none;
-  padding: 0 15px;
-  font-size: 16px;
-  border: none;
-  /* Added to remove default border */
-}
-.block-search input[type="text"]::placeholder {
-  color: #aaa;
-}
-.block-search button {
-  height: 100%;
-  /* Updated to 100% for consistency */
-  width: 60px;
-  border: none;
-  background-color: #ff4081;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 0 10px 10px 0;
-  /* Updated for consistency with input */
-  transition: background-color 0.3s;
-}
-.block-search button:hover {
-  background-color: #e0356f;
-  /* Added hover effect */
+  background-color: #48de61;
 }
 .navigation {
   background: white;
@@ -15305,7 +15074,7 @@ button.braintree-googlepay-button.black.long {
 .product-item:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   /* Add shadow on hover */
-  border-color: #ff4081;
+  border-color: #85c951;
   /* Change border color on hover */
 }
 .product-item-actions {
@@ -15329,7 +15098,7 @@ button.braintree-googlepay-button.black.long {
   /* Show on hover */
 }
 .action.tocart.primary {
-  background-color: #ff4081;
+  background-color: #0bac64;
   /* Button background color */
   color: #fff;
   /* Text color */
@@ -15347,7 +15116,7 @@ button.braintree-googlepay-button.black.long {
   /* Smooth transition */
 }
 .action.tocart.primary:hover {
-  background-color: #e03a6c;
+  background-color: #53e176;
   /* Darker shade on hover */
 }
 .orders-and-returns-page {
@@ -15355,7 +15124,7 @@ button.braintree-googlepay-button.black.long {
   /* Default font size */
   font-family: Arial, sans-serif;
   /* Default font family */
-  color: #333;
+  color: #176231;
   /* Default text color */
 }
 /* Customize specific elements if needed */
@@ -15364,7 +15133,7 @@ button.braintree-googlepay-button.black.long {
 .orders-and-returns-page h3 {
   font-family: 'Open Sans', sans-serif;
   /* Example font family for headings */
-  color: #ff4081;
+  color: #84c999;
   /* Example color for headings */
 }
 .orders-and-returns-page p {
@@ -15374,7 +15143,7 @@ button.braintree-googlepay-button.black.long {
   /* Example line height for paragraphs */
 }
 .orders-and-returns-page .action.primary {
-  background-color: #ff4081;
+  background-color: #108236;
   /* Button background color */
   color: #fff;
   /* Button text color */
@@ -15392,71 +15161,12 @@ button.braintree-googlepay-button.black.long {
   /* Smooth transition */
 }
 .orders-and-returns-page .action.primary:hover {
-  background-color: #e03a6c;
+  background-color: #0fa819;
   /* Darker shade on hover */
 }
 .orders-and-returns-page .action.primary {
-  background-color: #ff4081 !important;
+  background-color: #1dc139 !important;
   /* Force apply */
-}
-/* Styles généraux pour le header */
-.panel.header {
-  background-color: #f8f9fa;
-  /* Couleur de fond du header */
-  padding: 10px 20px;
-  /* Espacement intérieur */
-  border-bottom: 1px solid #dee2e6;
-  /* Bordure inférieure */
-  display: flex;
-  justify-content: space-between;
-  /* Aligner les éléments */
-  align-items: center;
-  /* Aligner verticalement */
-}
-.panel.header a.action.skip.contentarea {
-  font-size: 14px;
-  color: #007bff;
-  /* Couleur du lien */
-  text-decoration: none;
-}
-.panel.header a.action.skip.contentarea span {
-  font-weight: bold;
-}
-/* Styles pour la liste des liens dans le header */
-ul.header.links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-  /* Espacement entre les éléments */
-}
-ul.header.links li {
-  position: relative;
-}
-ul.header.links li a {
-  color: #333;
-  /* Couleur du texte des liens */
-  text-decoration: none;
-  font-size: 14px;
-  padding: 5px 10px;
-  /* Espacement intérieur */
-  display: block;
-}
-/* Styles pour le message de bienvenue */
-li.greet.welcome {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-li.greet.welcome .logged-in {
-  color: #28a745;
-  /* Couleur pour les utilisateurs connectés */
-  font-weight: bold;
-}
-/* Styles pour le menu déroulant du client */
-.customer-welcome {
-  position: relative;
 }
 .customer-name {
   display: flex;
@@ -15464,17 +15174,9 @@ li.greet.welcome .logged-in {
   cursor: pointer;
 }
 .customer-menu {
-  display: none;
-  /* Masquer le menu par défaut */
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ffffff;
-  /* Couleur de fond du menu */
-  border: 1px solid #dee2e6;
-  /* Bordure du menu */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  /* Ombre du menu */
   z-index: 1000;
 }
 .customer-menu ul {
@@ -15483,23 +15185,19 @@ li.greet.welcome .logged-in {
   margin: 0;
 }
 .customer-menu ul li {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #08a85b;
 }
 .customer-menu ul li a {
   display: block;
   padding: 10px 15px;
-  /* Espacement intérieur */
   color: #333;
   text-decoration: none;
 }
 .customer-menu ul li a:hover {
-  background-color: #f8f9fa;
-  /* Couleur de survol */
+  background-color: #cbe4c8;
 }
-/* Styles pour le lien de déconnexion */
 li.link.authorization-link a {
-  color: #dc3545;
-  /* Couleur du lien de déconnexion */
+  color: #35dc62;
   font-size: 14px;
   font-weight: bold;
 }
@@ -15509,6 +15207,17 @@ li.link.authorization-link a:hover {
 /* Afficher le menu lorsque l'utilisateur clique sur "Change" */
 .customer-name[data-action="customer-menu-toggle"] + .customer-menu {
   display: block;
+}
+li.link.authorization-link button.sign-out {
+  color: #35dc62;
+  /* Color of the Sign Out button */
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Hide Sign In link by default (initially) */
+.sign-in-link {
+  display: block;
+  /* Default visibility of Sign In link */
 }
 .navigation {
   text-align: center;
@@ -15665,67 +15374,39 @@ li.link.authorization-link a:hover {
   background-color: #00b357;
   transform: scale(1.05);
 }
-/* Base styles for all screen sizes */
-.page-main {
+/* app/design/frontend/[Vendor]/[Theme]/web/css/source/_mega_menu.less */
+.mega-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   padding: 20px;
   box-sizing: border-box;
 }
-.columns {
+.mega-menu-content {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.column.main {
-  flex: 1;
-  padding: 20px;
+.mega-menu-column {
+  width: 45%;
+  padding: 10px;
+  background-color: #eee;
 }
-/* Media Queries for different screen sizes */
-/* Small devices (phones, 0px to 599px) */
-@media (max-width: 599px) {
-  .page-main {
-    padding: 10px;
-  }
-  .columns {
-    flex-direction: column;
-  }
-  .column.main {
-    margin: 0;
-    padding: 10px;
-  }
-  .block {
-    margin-bottom: 20px;
-  }
+.mega-menu-column a {
+  display: block;
+  color: #333;
+  padding: 8px 0;
+  text-decoration: none;
 }
-/* Medium devices (tablets, 600px to 1023px) */
-@media (min-width: 600px) and (max-width: 1023px) {
-  .page-main {
-    padding: 15px;
-  }
-  .columns {
-    flex-direction: column;
-  }
-  .column.main {
-    margin: 0;
-    padding: 15px;
-  }
-  .block {
-    margin-bottom: 20px;
-  }
+.mega-menu-column a:hover {
+  background-color: #ddd;
 }
-/* Large devices (desktops, 1024px and up) */
-@media (min-width: 1024px) {
-  .page-main {
-    padding: 20px;
-  }
-  .columns {
-    flex-direction: row;
-  }
-  .column.main {
-    margin: 0;
-    padding: 20px;
-  }
-  .block {
-    margin-bottom: 20px;
-  }
+.level-top:hover .mega-menu {
+  display: block;
 }
 @media only screen and (max-width: 769px) {
   .field-tooltip .field-tooltip-content {

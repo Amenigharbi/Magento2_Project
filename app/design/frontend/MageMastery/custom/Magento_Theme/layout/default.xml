@@ -4,6 +4,7 @@
         <!-- Include the custom CSS file -->
         <css src="css/styles-l.css"/>
         <css src="css/custom.css"/>
+         <script src="js/custom.js"/>
     </head>
     <body>
         <referenceBlock name="logo">
@@ -39,7 +40,9 @@
         <referenceBlock name="orders-and-returns-link" remove="true">
 
         </referenceBlock>
-
+         <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="mega_menu" template="Magento_Theme::html/mega_menu.phtml"/>
+        </referenceContainer>
         <move element="authorization-link" destination="header.other" before="-"/>
         <move element="register-link" destination="header.other" after="my-account-link"/>
 

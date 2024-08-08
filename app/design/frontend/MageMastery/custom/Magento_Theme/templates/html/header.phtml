@@ -1,0 +1,27 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div class="panel wrapper">
+    <div class="panel header">
+        <a class="action skip contentarea" href="#contentarea">
+            <span><?= __('Skip to Content') ?></span>
+        </a>
+        <ul class="header links">
+            <li class="link authorization-link">
+                <form action="<?= $block->getUrl('customer/account/logout') ?>" method="post" class="sign-out-form">
+                      <button type="submit" class="action sign-out" title="<?= __('Sign Out') ?>">
+                       <?= __('Sign Out') ?>
+                       </button>
+              </form>
+            </li>
+
+        </ul>
+    </div>
+</div>
+    
+      
