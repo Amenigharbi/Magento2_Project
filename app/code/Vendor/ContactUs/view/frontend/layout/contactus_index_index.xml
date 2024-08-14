@@ -1,8 +1,28 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework/View/Layout/etc/page_configuration.xsd">
     <body>
+     <referenceBlock name="footer" remove="true" />
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="contact.form" template="Vendor_ContactUs::form.phtml"/>
         </referenceContainer>
+        
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/makali.png</argument>
+                <argument name="logo_height" xsi:type="string">62</argument>
+                <argument name="logo_width" xsi:type="string">100</argument>
+            </arguments>
+        </referenceBlock>
+        
+      
+
+         <referenceContainer name="page.top">
+            <block class="Vendor\MegaMenu\Block\Topmenu" name="mega_menu" template="Vendor_MegaMenu::topmenu.phtml"/>
+        </referenceContainer>
+        
+    
+       
+     
+
     </body>
 </page>

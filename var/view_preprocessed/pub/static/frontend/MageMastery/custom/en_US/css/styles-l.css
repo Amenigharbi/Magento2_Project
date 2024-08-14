@@ -231,7 +231,7 @@
 .header .customer-menu a {
   color: #88d57b;
   /* Darker text color */
-  padding: 10px 15px;
+  padding: 7px 9px;
 }
 .header .customer-menu a:hover {
   background-color: #f0f0f0;
@@ -248,8 +248,6 @@
   /* Modify as per your design */
 }
 .page-header .customer-welcome .action.switch {
-  background: #a1d893;
-  /* Button background color */
   color: #ffffff;
   padding: 8px 12px;
   border-radius: 4px;

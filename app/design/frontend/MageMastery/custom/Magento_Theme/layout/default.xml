@@ -4,48 +4,25 @@
         <!-- Include the custom CSS file -->
         <css src="css/styles-l.css"/>
         <css src="css/custom.css"/>
-        
     </head>
+
     <body>
-      <referenceBlock name="logo">
-          <action method="setLogoFile">
-              <argument name="logo_file" xsi:type="string">images/makali.png</argument>
-          </action>
-      </referenceBlock>
-
-        <!-- Add Banner Block -->
-        <referenceBlock name="content">
-            <block class="Magento\Framework\View\Element\Template"
-                   name="MageMastery.custom.banner"
-                   template="MageMastery_customTheme::banner.phtml" />
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/makali.png</argument>
+                <argument name="logo_height" xsi:type="string">62</argument>
+                <argument name="logo_width" xsi:type="string">100</argument>
+            </arguments>
         </referenceBlock>
-
+        
+       
          <referenceContainer name="page.top">
             <block class="Vendor\MegaMenu\Block\Topmenu" name="mega_menu" template="Vendor_MegaMenu::topmenu.phtml"/>
         </referenceContainer>
         
         <!-- Remove unnecessary blocks -->
-        <referenceBlock name="catalog.leftnav" remove="true" />
-        <referenceBlock name="catalog.compare.sidebar" remove="true" />
-        <referenceBlock name="wishlist_sidebar" remove="true" />
-        <referenceBlock name="report.bugs" remove="true" />
-        <referenceBlock name="page.main.title" remove="true" />
-        <referenceBlock name="catalog.compare.link" remove="true" />
-        <referenceBlock name="privacy-policy-link" remove="true" />
-        <referenceBlock name="search-term-popular-link" remove="true" />
-        <referenceBlock name="catalog-search-advanced-link" remove="true" />
-        <referenceBlock name="contact-us-link" remove="true" />
-        <referenceBlock name="footer.newsletter" remove="true" />
-        <referenceBlock name="advanced-search-link" remove="true" />
-        <referenceBlock name="form.subscribe" remove="true" />
-        <referenceBlock name="sales.order.history" remove="true" />
-        <referenceBlock name="orders-and-returns-link" remove="true">
 
-        </referenceBlock>
        
-       
-        <move element="authorization-link" destination="header.other" before="-"/>
-        <move element="register-link" destination="header.other" after="my-account-link"/>
 
     </body>
 </page>

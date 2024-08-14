@@ -364,8 +364,7 @@ return [
         'PayPal_BraintreeGiftWrapping' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Vendor_ContactUs' => 1,
-        'Vendor_MegaMenu' => 1,
-        'Vendor_Module' => 1
+        'Vendor_MegaMenu' => 1
     ],
     'system' => [
         'default' => [
