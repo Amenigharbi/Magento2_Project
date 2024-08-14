@@ -1,0 +1,74 @@
+<nav class="navigation" data-action="navigation">
+    <ul>
+        <?php foreach ($block->getCategories() as $category): ?>
+            <li class="level0 nav-<?= $category->getId(); ?> category-item level-top">
+                <a href="<?= $category->getUrl(); ?>" class="level-top">
+                    <span><?= $category->getName(); ?></span>
+                </a>
+                <div class="mega-menu">
+                    <?php $subcategories = $category->getChildrenCategories(); ?>
+                    <?php if ($subcategories->count() > 0): ?>
+                        <div class="mega-menu-row">
+                            <div class="subcategory-column">
+                                <?php foreach ($subcategories as $subcategory): ?>
+                                    <div class="mega-menu-col">
+                                        <h4><?= $subcategory->getName(); ?></h4>
+                                        <div class="subcategory-products">
+                                            <?php $products = $block->getCategoryProducts($subcategory->getId()); ?>
+                                            <?php if ($products->getSize() > 0): ?>
+                                                <ul>
+                                                    <?php
+                                                    $productList = $products->getItems();
+                                                    $displayedProducts = array_slice($productList, 0, 3); 
+                                                    foreach ($displayedProducts as $product): ?>
+                                                        <li>
+                                                            <a href="<?= $product->getProductUrl(); ?>">
+                                                                <img src="<?= $block->getImageUrl($product); ?>" alt="<?= $product->getName(); ?>"/>
+                                                                <?= $product->getName(); ?>
+                                                            </a>
+                                                        </li>
+                                                    <?php endforeach; ?>
+                                                    <?php if (count($productList) > 2): ?>
+                                                        <li class="see-more">
+                                                            <a href="<?= $subcategory->getUrl(); ?>" class="see-more-link">See More</a>
+                                                        </li>
+                                                    <?php endif; ?>
+                                                </ul>
+                                            <?php else: ?>
+                                                <p>No products available</p>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <div class="mega-menu-row">
+                            <?php $products = $block->getCategoryProducts($category->getId()); ?>
+                            <?php if ($products->getSize() > 0): ?>
+                                <?php
+                                $productList = $products->getItems();
+                                $displayedProducts = array_slice($productList, 0, 5); // Limit to 5 products
+                                foreach ($displayedProducts as $product): ?>
+                                    <div class="mega-menu-col">
+                                        <a href="<?= $product->getProductUrl(); ?>">
+                                            <img src="<?= $block->getImageUrl($product); ?>" alt="<?= $product->getName(); ?>"/>
+                                            <?= $product->getName(); ?>
+                                        </a>
+                                    </div>
+                                <?php endforeach; ?>
+                                <?php if (count($productList) >3): ?>
+                                    <div class="see-more">
+                                        <a href="<?= $category->getUrl(); ?>" class="see-more-link">See More</a>
+                                    </div>
+                                <?php endif; ?>
+                            <?php else: ?>
+                                <p>No products available</p>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</nav>

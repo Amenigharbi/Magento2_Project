@@ -4,16 +4,14 @@
         <!-- Include the custom CSS file -->
         <css src="css/styles-l.css"/>
         <css src="css/custom.css"/>
-         <script src="js/custom.js"/>
+        
     </head>
     <body>
-        <referenceBlock name="logo">
-            <arguments>
-                <argument name="logo_file" xsi:type="string">images/makali.png</argument>
-                <argument name="logo_height" xsi:type="string">62</argument>
-                <argument name="logo_width" xsi:type="string">100</argument>
-            </arguments>
-        </referenceBlock>
+      <referenceBlock name="logo">
+          <action method="setLogoFile">
+              <argument name="logo_file" xsi:type="string">images/makali.png</argument>
+          </action>
+      </referenceBlock>
 
         <!-- Add Banner Block -->
         <referenceBlock name="content">
@@ -22,9 +20,13 @@
                    template="MageMastery_customTheme::banner.phtml" />
         </referenceBlock>
 
+         <referenceContainer name="page.top">
+            <block class="Vendor\MegaMenu\Block\Topmenu" name="mega_menu" template="Vendor_MegaMenu::topmenu.phtml"/>
+        </referenceContainer>
+        
         <!-- Remove unnecessary blocks -->
         <referenceBlock name="catalog.leftnav" remove="true" />
-       <!-- <referenceBlock name="catalog.compare.sidebar" remove="true" />-->
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
         <referenceBlock name="wishlist_sidebar" remove="true" />
         <referenceBlock name="report.bugs" remove="true" />
         <referenceBlock name="page.main.title" remove="true" />
@@ -40,9 +42,8 @@
         <referenceBlock name="orders-and-returns-link" remove="true">
 
         </referenceBlock>
-         <referenceContainer name="header.panel">
-            <block class="Magento\Framework\View\Element\Template" name="mega_menu" template="Magento_Theme::html/mega_menu.phtml"/>
-        </referenceContainer>
+       
+       
         <move element="authorization-link" destination="header.other" before="-"/>
         <move element="register-link" destination="header.other" after="my-account-link"/>
 

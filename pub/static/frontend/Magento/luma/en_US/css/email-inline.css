@@ -1,4 +1,8 @@
 @import url("{{base_url_path}}frontend/Magento/luma/{{locale}}/css/email-fonts.css");
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 body {
   margin: 0;
   padding: 0;
