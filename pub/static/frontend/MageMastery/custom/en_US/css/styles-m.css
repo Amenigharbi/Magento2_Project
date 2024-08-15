@@ -14237,11 +14237,9 @@ button.braintree-googlepay-button.black.long {
   /* Darker text color */
 }
 .page-header .panel.wrapper {
-  border-bottom: 0px solid #e8e8e8;
-  background-color: #fdfdfd;
+  border-bottom: solid #e8e8e8;
+  background-color: #ffffff;
   /* Background color for top panel */
-  color: #f0f0f0;
-  /* Text color */
 }
 .page-header .panel.header {
   padding: 10px 0;
@@ -14274,12 +14272,11 @@ button.braintree-googlepay-button.black.long {
 }
 .page-header .customer-welcome .customer-name {
   font-weight: bold;
-  color: #e4ece6;
+  color: #9ef1c1;
   /* Modify as per your design */
 }
 .page-header .customer-welcome .action.switch {
   color: #ffffff;
-  padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
@@ -14541,6 +14538,54 @@ button.braintree-googlepay-button.black.long {
 }
 .top-nav a:hover {
   background-color: #444;
+}
+.page-header .panel.wrapper {
+  border-bottom: solid #e8e8e8;
+  background-color: #ffffff;
+  /* Background color for top panel */
+}
+.page-header .panel.header {
+  padding: 10px 0;
+  /* Adjust padding for header elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .customer-menu {
+  background-color: #f9f9f9;
+  /* Lighter background for the customer menu */
+  border-radius: 5px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+.header .customer-menu a {
+  color: #88d57b;
+  /* Darker text color */
+  padding: 7px 9px;
+}
+.header .customer-menu a:hover {
+  background-color: #f0f0f0;
+  /* Background on hover */
+}
+.page-header .welcome {
+  font-size: 16px;
+  color: #fcfbfb;
+  padding-right: 20px;
+}
+.page-header .customer-welcome .customer-name {
+  font-weight: bold;
+  color: #9ef1c1;
+  /* Modify as per your design */
+}
+.page-header .customer-welcome .action.switch {
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.page-header .customer-welcome .action.switch:hover {
+  background: #99e1ac;
+  /* Darken color on hover */
 }
 .product-info-main {
   font-family: 'Open Sans', sans-serif;

@@ -8,7 +8,7 @@
         
         <referenceBlock name="logo">
             <arguments>
-                <argument name="logo_file" xsi:type="string">images/makali.png</argument>
+                <argument name="logo_file" xsi:type="string">images/mak.png</argument>
                 <argument name="logo_height" xsi:type="string">62</argument>
                 <argument name="logo_width" xsi:type="string">100</argument>
             </arguments>
