@@ -1,5 +1,4 @@
 <?php
-
 namespace Vendor\Check\Plugin\Checkout;
 
 use Vendor\Check\Model\CityPostalCodeRepository;
@@ -17,7 +16,12 @@ class LayoutProcessor
         \Magento\Checkout\Block\Checkout\LayoutProcessor $subject,
         array $jsLayout
     ) {
-        // Define the custom field configuration
+        unset($jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
+        ['shippingAddress']['children']['shipping-address-fieldset']['children']['postcode']);
+
+        unset($jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
+        ['shippingAddress']['children']['shipping-address-fieldset']['children']['city']);
+
         $customField = [
             'component' => 'Magento_Ui/js/form/element/select',
             'config' => [
@@ -25,7 +29,7 @@ class LayoutProcessor
                 'template' => 'ui/form/field',
                 'elementTmpl' => 'ui/form/element/select',
                 'id' => 'custom_postcode',
-                'options' => [] // This will be populated dynamically
+                'options' => [] // This will be populated dynamically via Knockout
             ],
             'dataScope' => 'shippingAddress.custom_postcode',
             'label' => __('Postal Code'),
@@ -34,10 +38,10 @@ class LayoutProcessor
             'sortOrder' => 250,
             'validation' => [
                 'required-entry' => true
-            ]
+            ],
+            'value' => '' // Bind selected value
         ];
 
-        // Insert the custom field into the layout
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
             ['shippingAddress']['children']['shipping-address-fieldset']['children']['custom_postcode'] = $customField;
 

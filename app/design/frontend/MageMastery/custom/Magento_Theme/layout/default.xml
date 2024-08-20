@@ -4,6 +4,7 @@
         <!-- Include the custom CSS file -->
         <css src="css/styles-l.css"/>
         <css src="css/custom.css"/>
+         <script src="Vendor_Check::js/postal-code.js"/>
     </head>
 
     <body>

@@ -3,5 +3,6 @@
     <head>
         <css src="Vendor_MegaMenu::css/custom-mega-menu.css"/>
         <script src="js/mega-menu.js"/>
+        <script src="Vendor_Check::js/postal-code.js"/>
     </head>
 </page>

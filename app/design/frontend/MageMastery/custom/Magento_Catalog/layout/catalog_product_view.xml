@@ -3,6 +3,7 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="css/styles-l.less"/>
+        <script src="Vendor_Check::js/postal-code.js"/>
     </head>
 
     <body>

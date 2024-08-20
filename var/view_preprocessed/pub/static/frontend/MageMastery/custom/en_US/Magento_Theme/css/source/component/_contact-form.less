@@ -1,0 +1,87 @@
+// _contact-form.less
+
+@form-background-color: #f9f9f9;
+@border-color: #ddd;
+@input-border-color: #ccc;
+@button-bg-color: #9eee87;
+@button-bg-color-hover: #00b357;
+@text-color: #333;
+@title-color: #39712c; // Couleur du titre
+@transition-speed: 0.3s; // Vitesse de transition
+@shadow-color: rgba(56, 217, 139, 0.1); // Couleur de l'ombre
+@border-hover-color: #9cf085; // Couleur de bordure au survol
+
+// Style général du formulaire
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid @border-color;
+    border-radius: 8px;
+    background-color: @form-background-color;
+    box-shadow: 0 4px 8px @shadow-color; // Ombre portée pour un effet de profondeur
+    transition: box-shadow @transition-speed, transform @transition-speed; // Transition de l'ombre portée et de la transformation
+}
+
+#contact-form div:hover {
+    border-color: @border-hover-color; 
+}
+
+// Style du titre
+#contact-form h2 {
+    text-align: center; // Centre le titre
+    color: @title-color;
+    margin-bottom: 20px; // Espace sous le titre
+    font-size: 24px; // Taille du titre
+    transition: color @transition-speed; // Transition de la couleur du titre
+}
+
+// Style des champs du formulaire
+#contact-form div {
+    margin-bottom: 15px;
+    transition: border-color @transition-speed; // Transition de la couleur de bordure
+}
+
+// Style des labels
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: @text-color;
+}
+
+// Style des champs de saisie
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid @input-border-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color @transition-speed, box-shadow @transition-speed; // Transition des bordures et de l'ombre
+}
+
+// Style du champ de texte
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+// Style du bouton de soumission
+#contact-form button {
+    background-color: @button-bg-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color @transition-speed, transform @transition-speed; // Transition de la couleur de fond et de la transformation
+}
+
+// Style du bouton au survol
+#contact-form button:hover {
+    background-color: @button-bg-color-hover;
+    transform: scale(1.05); // Légère augmentation de la taille du bouton au survol
+}
