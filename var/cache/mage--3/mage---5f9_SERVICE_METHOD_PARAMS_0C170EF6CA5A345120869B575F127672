@@ -1,2 +1,2 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724148265;s:6:"expire";i:9999999999;s:4:"tags";s:38:"5f9_REFLECTION,5f9_REFLECTION,5f9_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724149006;s:6:"expire";i:9999999999;s:4:"tags";s:38:"5f9_REFLECTION,5f9_REFLECTION,5f9_MAGE";}
 [{"name":"option","type":"Magento\\Bundle\\Api\\Data\\OptionInterface","isDefaultValueAvailable":false,"defaultValue":null}]
