@@ -4,7 +4,7 @@ define('Vendor_Check/js/postal-code', [
     'Magento_Checkout/js/model/quote'
 ], function ($, urlBuilder, quote) {
     'use strict';
-    console.log("loaded");
+    console.log("Postal Code script loaded");
 
     return function (target) {
         return target.extend({
@@ -19,75 +19,73 @@ define('Vendor_Check/js/postal-code', [
             waitForElements: function () {
                 var self = this;
                 var intervalId = setInterval(function () {
-                    var countrySelect = $('[name=country_id]');
-                    var citySelect = $('[name=region_id]');
+                    var countrySelect = $('[name="country_id"]');
+                    var regionSelect = $('[name="region_id"]');
 
-                    if (countrySelect.length && citySelect.length) {
+                    if (countrySelect.length && regionSelect.length) {
                         console.log('Country Select Element:', countrySelect);
-                        console.log('City Select Element:', citySelect);
+                        console.log('Region Select Element:', regionSelect);
 
-                        // Lier l'événement change du sélecteur de pays
                         countrySelect.on('change', self.handleCountryChange.bind(self));
-                        // Lier l'événement change du sélecteur de ville
-                        citySelect.on('change', self.handleCityChange.bind(self));
+                        regionSelect.on('change', self.handleCityChange.bind(self));
 
-                        clearInterval(intervalId); // Arrêter de vérifier une fois que les éléments sont trouvés
+                        clearInterval(intervalId); // Stop checking once elements are found
                     } else {
-                        console.log("Les éléments select pour le pays et/ou la ville ne sont pas encore disponibles.");
+                        console.log("Country or region select elements not yet available.");
                     }
-                }, 500); // Vérifier toutes les 500ms (ajustez selon vos besoins)
+                }, 500); // Adjust the interval time as needed
             },
 
             handleCountryChange: function (event) {
                 var selectedCountryId = $(event.target).val();
-                console.log("Pays sélectionné:", selectedCountryId);
+                console.log("Selected country:", selectedCountryId);
 
                 this.clearPostalCodes();
 
-                if (selectedCountryId) {
-                    // Vous pouvez également déclencher une mise à jour des villes disponibles ici si nécessaire
-                }
+                // Reset the region selection when the country changes
+                $('[name="region_id"]').val('');
             },
 
             handleCityChange: function (event) {
-                var selectedCity = $(event.target).val();
-                var selectedCountryId = $('[name=country_id]').val();
-                console.log("Ville sélectionnée:", selectedCity);
+                var selectedRegionId = $(event.target).val();
+                var selectedCountryId = $('[name="country_id"]').val();
+                console.log("Selected region:", selectedRegionId);
 
-                if (selectedCity && selectedCountryId) {
-                    this.updatePostalCodes(selectedCountryId, selectedCity);
+                if (selectedRegionId && selectedCountryId) {
+                    this.updatePostalCodes(selectedRegionId);
                 } else {
                     this.clearPostalCodes();
                 }
             },
 
-            updatePostalCodes: function (countryId, city) {
+            updatePostalCodes: function (regionId) {
                 var self = this;
 
-                if (countryId && city) {
-                    console.log("Récupération des codes postaux pour le pays:", countryId, "et la ville:", city);
-                    var serviceUrl = urlBuilder.build('check/city/getPostalCodes?country_id=' + countryId + '&city=' + city);
+                if (regionId) {
+                    console.log("Fetching postal codes for region:", regionId);
+                    var serviceUrl = urlBuilder.build('check/city/getPostalCodes?region_id=' + regionId);
 
                     $.getJSON(serviceUrl, function (data) {
-                        console.log("Réponse de l'API:", data);
+                        console.log("API response:", data);
                         if (Array.isArray(data.postal_codes)) {
-                            var postalCodeSelect = $('[name=postcode]');
+                            console.log('hi');
+                            var postalCodeSelect = $('[name="postcode"]');
                             postalCodeSelect.empty();
                             postalCodeSelect.append('<option value="">Please select a postal code</option>');
                             $.each(data.postal_codes, function (index, postalCode) {
                                 postalCodeSelect.append('<option value="' + postalCode + '">' + postalCode + '</option>');
                             });
                         } else {
-                            console.log('Format de données invalide reçu du serveur.');
+                            console.log('Invalid data format received from the server.');
                         }
                     }).fail(function () {
-                        console.log('La requête AJAX a échoué.');
+                        console.log('AJAX request failed.');
                     });
                 }
             },
 
             clearPostalCodes: function () {
-                var postalCodeSelect = $('[name=postcode]');
+                var postalCodeSelect = $('[name="postcode"]');
                 postalCodeSelect.empty();
                 postalCodeSelect.append('<option value="">Please select a postal code</option>');
             }

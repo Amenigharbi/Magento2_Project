@@ -1,8 +1,9 @@
 <?php
 namespace Vendor\Check\Controller\City;
+
+use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\Controller\Result\JsonFactory;
-use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\ResourceConnection;
 
 class GetPostalCodes extends Action
@@ -22,7 +23,7 @@ class GetPostalCodes extends Action
 
     public function execute()
     {
-        $regionId = $this->getRequest()->getParam('region_id');
+        $regionId = $this->getRequest()->getParam('region_id'); 
         $connection = $this->resourceConnection->getConnection();
         $tableName = $this->resourceConnection->getTableName('directory_city_postal_codes');
 
