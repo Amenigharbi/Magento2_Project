@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Vendor_Check::city_postal_codes" title="City Postal Codes" module="Vendor_Check"
+             sortOrder="100" parent="Magento_Backend::content" action="check_admin/city_postal_codes/index" resource="Vendor_Check::city_postal_codes"/>
+    </menu>
+</config>

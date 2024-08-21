@@ -35,7 +35,7 @@ define('Vendor_Check/js/postal-code', [
                     } else {
                         console.log("Country, region or postal code select elements not yet available.");
                     }
-                }, 500); // Adjust the interval time as needed
+                }, 500); 
             },
 
             handleCountryChange: function (event) {
@@ -43,8 +43,6 @@ define('Vendor_Check/js/postal-code', [
                 console.log("Selected country:", selectedCountryId);
 
                 this.clearPostalCodes();
-
-                // Reset the region selection when the country changes
                 $('[name="region_id"]').val('');
             },
 
@@ -70,7 +68,7 @@ define('Vendor_Check/js/postal-code', [
                     $.getJSON(serviceUrl, function (data) {
                         console.log("API response:", data);
                         if (Array.isArray(data.postal_codes)) {
-                            var postalCodeSelect = $('[name="custom_postcode"]'); // Use custom_postcode for dropdown
+                            var postalCodeSelect = $('[name="custom_postcode"]');
                             postalCodeSelect.empty();
                             postalCodeSelect.append('<option value="">Please select a postal code</option>');
                             $.each(data.postal_codes, function (index, postalCode) {
@@ -86,7 +84,7 @@ define('Vendor_Check/js/postal-code', [
             },
 
             clearPostalCodes: function () {
-                var postalCodeSelect = $('[name="custom_postcode"]'); // Use custom_postcode for dropdown
+                var postalCodeSelect = $('[name="custom_postcode"]'); 
                 postalCodeSelect.empty();
                 postalCodeSelect.append('<option value="">Please select a postal code</option>');
             }

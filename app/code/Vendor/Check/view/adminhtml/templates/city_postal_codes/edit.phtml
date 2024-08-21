@@ -1,0 +1,17 @@
+<?php
+/** @var \Magento\Framework\View\Element\FormKey $formKey */
+?>
+<form id="edit_form" action="<?= $block->getFormActionUrl() ?>" method="post">
+    <?= $formKey->getFormKeyHtml() ?>
+    <div class="admin__field">
+        <label for="region_id"><?= __('Region ID') ?></label>
+        <input type="text" name="region_id" id="region_id" value="<?= $block->escapeHtml($block->getRegionId()) ?>" />
+    </div>
+    <div class="admin__field">
+        <label for="postal_code"><?= __('Postal Code') ?></label>
+        <input type="text" name="postal_code" id="postal_code" value="<?= $block->escapeHtml($block->getPostalCode()) ?>" />
+    </div>
+    <div class="admin__field">
+        <button type="submit" class="action save primary"><?= __('Save') ?></button>
+    </div>
+</form>
