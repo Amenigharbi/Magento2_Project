@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="magemastery_blog_post" resource="default" engine="innodb" comment="Mage Mastery Blog Post Table">
+        <column xsi:type="smallint" name="city_id" unsigned="false" nullable="false" identity="true"
+                comment="Post ID"/>
+        <column xsi:type="varchar" name="city_name" nullable="true" length="255" comment="Post Title"/>
+        <column xsi:type="varchar" name="postal_code" nullable="true" length="255" comment="Post Url Key"/>
+        
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="city_id"/>
+        </constraint>
+    </table>
+</schema>

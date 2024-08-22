@@ -1,0 +1,21 @@
+<?php
+
+use MageMastery\Blog\Model\Post;
+use MageMastery\Blog\ViewModel\PostViewModel;
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+
+/** @var Post $post */
+/** @var PostViewModel $postViewModel */
+/** @var Template $block */
+/** @var Escaper $escaper */
+
+$postViewModel = $block->getData('post_view_model');
+$post = $block->getData('post');
+?>
+
+
+    <h2><?= $escaper->escapeHtml($post->getData('region_id')); ?></h2>
+
+
+<p><?= $post->getData('content'); ?></p>

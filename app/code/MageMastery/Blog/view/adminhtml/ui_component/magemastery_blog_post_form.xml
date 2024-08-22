@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!-- form arguments -->
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">magemastery_blog_post_form.magemastery_blog_post_form_data_source</item>
+        </item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <!-- form settings -->
+    <settings>
+        <buttons>
+            <button name="save" class="MageMastery\Blog\Block\Adminhtml\Post\Edit\SaveButton" />
+            <button name="back" class="MageMastery\Blog\Block\Adminhtml\Post\Edit\BackButton" />
+        </buttons>
+        <namespace>magemastery_blog_post_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>magemastery_blog_post_form.magemastery_blog_post_form_data_source</dep>
+        </deps>
+    </settings>
+    <!-- form data source -->
+    <dataSource name="magemastery_blog_post_form_data_source">
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <settings>
+            <submitUrl path="magemastery_blog/post/save" />
+        </settings>
+        <dataProvider class="MageMastery\Blog\Model\Post\DataProvider" name="magemastery_blog_post_form_data_source">
+            <settings>
+                <requestFieldName>entity_id</requestFieldName>
+                <primaryFieldName>entity_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <!-- fieldset(s) -->
+    <fieldset name="general">
+        <settings>
+            <label/>
+        </settings>
+        <field name="entity_id" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">City</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>smallint</dataType>
+                <visible>false</visible>
+                <dataScope>entity_id</dataScope>
+            </settings>
+        </field>
+        <field name="region_id" sortOrder="20" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">post</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">City id</label>
+                <dataScope>region_id</dataScope>
+            </settings>
+        </field>
+        <field name="postal_code" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">post</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Postal Code</label>
+                <dataScope>postal_code</dataScope>
+            </settings>
+        </field>
+    </fieldset>
+   
+    <!-- fields(s) -->
+</form>

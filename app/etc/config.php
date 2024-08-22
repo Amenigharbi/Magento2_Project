@@ -355,6 +355,7 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Macademy_Jumpstart' => 1,
+        'MageMastery_Blog' => 1,
         'Mage_Chekout' => 1,
         'Mageplaza_HelloWorld' => 1,
         'MarkShust_PageBuilderSourceCode' => 1,

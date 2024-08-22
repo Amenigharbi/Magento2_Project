@@ -1,0 +1,21 @@
+<?php
+
+use MageMastery\Blog\Model\Post;
+use MageMastery\Blog\ViewModel\Post\PostView;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Post $post */
+/** @var PostView $postView */
+/** @var Template $block */
+/** @var Escaper $escaper */
+
+$postView = $block->getData('post_view_model');
+$post = $postView->getPost();
+?>
+<h1><?= $escaper->escapeHtml($post->getData('region_id')); ?></h1>
+
+<div>
+    <span class="author">Max Pronko</span>
+</div>
+<p><?= $post->getData('region_id'); ?></p>
