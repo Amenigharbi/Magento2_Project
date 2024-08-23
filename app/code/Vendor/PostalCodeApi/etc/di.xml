@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Préférence pour l'interface PostalCodeRepositoryInterface -->
+    <preference for="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" type="Vendor\PostalCodeApi\Model\PostalCodeRepository"/>
+
+    <!-- Configuration pour l'implémentation de PostalCode -->
+    <type name="Vendor\PostalCodeApi\Model\PostalCode">
+        <!-- Définir les arguments si nécessaire -->
+    </type>
+
+    <!-- Configuration pour le ResourceModel PostalCode -->
+    <type name="Vendor\PostalCodeApi\Model\ResourceModel\PostalCode">
+        <!-- Définir les arguments si nécessaire -->
+    </type>
+
+    <type name="Vendor\PostalCodeApi\Model\PostalCode">
+        <arguments>
+            <argument name="data" xsi:type="array"/>
+        </arguments>
+    </type>
+   <type name="Vendor\PostalCodeApi\Model\PostalCodeRepository">
+        <arguments>
+            <argument name="resource" xsi:type="object">Magento\Framework\App\ResourceConnection</argument>
+        </arguments>
+    </type>
+     <type name="Vendor\PostalCodeApi\Api\Data\PostalCodeInterface">
+        <arguments>
+            <argument name="data" xsi:type="array"/>
+        </arguments>
+    </type>
+    <type name="Vendor\PostalCodeApi\Model\PostalCodeFactory">
+        <arguments>
+            <argument name="objectManager" xsi:type="object">Magento\Framework\ObjectManagerInterface</argument>
+        </arguments>
+    </type>
+</config>

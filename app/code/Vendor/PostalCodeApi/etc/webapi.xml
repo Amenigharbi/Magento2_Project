@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Webapi/etc/webapi.xsd">
+    <route url="/V1/postalcodes/:id" method="GET">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/postalcodes" method="GET">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+     <route url="/V1/postalcodes" method="POST">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- Endpoint to update an existing postal code by ID -->
+    <route url="/V1/postalcodes/:id" method="PUT">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- Endpoint to delete a postal code by region_id -->
+    <route url="/V1/postalcodes/region/:regionId" method="DELETE">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="deleteByRegionId"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <!-- Endpoint to get postal codes by region ID -->
+    <route url="/V1/postalcodes/region/:regionId" method="GET">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="getByRegionId"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

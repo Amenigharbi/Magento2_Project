@@ -366,7 +366,8 @@ return [
         'PayPal_BraintreeGraphQl' => 1,
         'Vendor_Check' => 1,
         'Vendor_ContactUs' => 1,
-        'Vendor_MegaMenu' => 1
+        'Vendor_MegaMenu' => 1,
+        'Vendor_PostalCodeApi' => 1
     ],
     'system' => [
         'default' => [
