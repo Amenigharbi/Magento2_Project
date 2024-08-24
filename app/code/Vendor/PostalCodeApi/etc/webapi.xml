@@ -12,19 +12,25 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
-     <route url="/V1/postalcodes" method="POST">
-        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="save"/>
+  <route url="/V1/postalcodes" method="POST">
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="createPostalCode"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
+        <data>
+            <parameter name="data" />
+        </data>
     </route>
 
     <!-- Endpoint to update an existing postal code by ID -->
     <route url="/V1/postalcodes/:id" method="PUT">
-        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="save"/>
+        <service class="Vendor\PostalCodeApi\Api\PostalCodeRepositoryInterface" method="createPostalCode"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
+        <data>
+            <parameter name="data" />
+        </data>
     </route>
 
     <!-- Endpoint to delete a postal code by region_id -->

@@ -6,14 +6,6 @@ use Magento\Framework\Api\SearchResultsInterface;
 
 interface PostalCodeRepositoryInterface
 {
-    /**
-     * Save postal code.
-     *
-     * @param array $postalCodeData
-     * @return array $postalCodeData
-     * @throws \Magento\Framework\Exception\LocalizedException
-     */
-    public function save(array $postalCodeData);
 
     /**
      * Get postal code by ID.
@@ -23,7 +15,23 @@ interface PostalCodeRepositoryInterface
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function getById($id);
+   /**
+ * Create a postal code.
+ *
+ * @param string $data JSON string with postal code data
+ * @return \Vendor\PostalCodeApi\Api\Data\PostalCodeInterface
+ * @throws \Magento\Framework\Exception\LocalizedException
+ */
+public function createPostalCode($data);
 
+    /**
+     * Save postal code.
+     *
+     * @param PostalCodeInterface $postalCode
+     * @return \Vendor\PostalCodeApi\Model\PostalCode
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    public function save(PostalCodeInterface $postalCode);
     /**
      * Get postal codes by region ID.
      *
