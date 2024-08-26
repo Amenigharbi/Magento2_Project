@@ -15,14 +15,14 @@ interface PostalCodeRepositoryInterface
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function getById($id);
-   /**
- * Create a postal code.
- *
- * @param string $data JSON string with postal code data
- * @return \Vendor\PostalCodeApi\Api\Data\PostalCodeInterface
- * @throws \Magento\Framework\Exception\LocalizedException
- */
-public function createPostalCode($data);
+    /**
+    * Create a postal code.
+    *
+    * @param string $data JSON string with postal code data
+    * @return \Vendor\PostalCodeApi\Api\Data\PostalCodeInterface
+    * @throws \Magento\Framework\Exception\LocalizedException
+    */
+     public function createPostalCode($data);
 
     /**
      * Save postal code.
@@ -64,4 +64,15 @@ public function createPostalCode($data);
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function deleteByRegionId($regionId);
+
+   /**
+     * Update a postal code by ID.
+     *
+     * @param int $id The ID of the postal code to update
+     * @param string $data JSON string with postal code data
+     * @return string 
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    public function updatePostalCode($id, $data);
 }

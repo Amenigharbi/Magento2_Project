@@ -1,10 +1,10 @@
 <?php
-namespace Magento\PageCache\Model\Varnish;
+namespace Magento\Integration\Api\Data;
 
 /**
- * Factory class for @see \Magento\PageCache\Model\Varnish\VclGenerator
+ * Factory class for @see \Magento\Integration\Api\Data\UserTokenParametersInterface
  */
-class VclGeneratorFactory
+class UserTokenParametersInterfaceFactory
 {
     /**
      * Object Manager instance
@@ -26,7 +26,7 @@ class VclGeneratorFactory
      * @param \Magento\Framework\ObjectManagerInterface $objectManager
      * @param string $instanceName
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\PageCache\\Model\\Varnish\\VclGenerator')
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Integration\\Api\\Data\\UserTokenParametersInterface')
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -36,7 +36,7 @@ class VclGeneratorFactory
      * Create class instance with specified parameters
      *
      * @param array $data
-     * @return \Magento\PageCache\Model\Varnish\VclGenerator
+     * @return \Magento\Integration\Api\Data\UserTokenParametersInterface
      */
     public function create(array $data = [])
     {
