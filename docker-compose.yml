@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=ameni_gharbi
+      - N8N_BASIC_AUTH_PASSWORD=Ameni123
+      - N8N_HOST=magentosatori.app.n8n.cloud
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+    volumes:
+      - ~/.n8n:/home/node/.n8n

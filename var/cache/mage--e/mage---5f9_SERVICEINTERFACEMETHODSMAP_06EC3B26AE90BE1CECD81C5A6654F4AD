@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724857995;s:6:"expire";i:9999999999;s:4:"tags";s:23:"5f9_REFLECTION,5f9_MAGE";}
+{"getPercentageValue":{"type":"float","isRequired":false,"description":null,"parameterCount":0},"setPercentageValue":{"type":"this","isRequired":true,"description":null,"parameterCount":1},"getWebsiteId":{"type":"int","isRequired":false,"description":null,"parameterCount":0},"setWebsiteId":{"type":"this","isRequired":true,"description":null,"parameterCount":1}}

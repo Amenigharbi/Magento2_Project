@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724857994;s:6:"expire";i:9999999999;s:4:"tags";s:23:"5f9_REFLECTION,5f9_MAGE";}
+{"getVideoContent":{"type":"\\Magento\\Framework\\Api\\Data\\VideoContentInterface","isRequired":false,"description":null,"parameterCount":0},"setVideoContent":{"type":"this","isRequired":true,"description":null,"parameterCount":1}}

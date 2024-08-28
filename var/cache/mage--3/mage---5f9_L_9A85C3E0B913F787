@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724834762;s:6:"expire";i:1811234762;s:4:"tags";s:76:"5f9_ADMINHTML_INTEGRATION_TOKENSDIALOG,5f9_LAYOUT_GENERAL_CACHE_TAG,5f9_MAGE";}
+{"pageLayout":"","layout":"<container name=\"root\">\n   <block class=\"Magento\\Integration\\Block\\Adminhtml\\Integration\\Tokens\" name=\"integration_token_popup\"\/>\n<\/container>\n"}

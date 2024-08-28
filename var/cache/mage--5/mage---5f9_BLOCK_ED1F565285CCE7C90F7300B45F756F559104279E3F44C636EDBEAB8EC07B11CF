@@ -1,0 +1,164 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1724858261;s:6:"expire";i:1724861861;s:4:"tags";s:43:"5f9_STORE,5f9_CMS_B,5f9_BLOCK_HTML,5f9_MAGE";}
+<footer class="footer">
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+        
+        footer {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: #121315;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer p {
+            color: #fff;
+            max-width: 25em;
+            font-size: 0.9em;
+            line-height: 23px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            display: flex;
+            justify-content: space-between;
+            gap: 2em;
+        }
+        .footer .container > div {
+            flex: 1;
+        }
+        .brand {
+            display: block;
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+        .media-icons li,
+        .services-icons li {
+            display: inline-block;
+            margin: 0.5em 0.5em 0.5em 0;
+        }
+        .media-icons a {
+            font-size: 1.1em;
+            width: 2em;
+            height: 2em;
+            border: 1px #fff solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .media-icons a:hover {
+            background: #fff;
+            color: #111;
+        }
+        .services-icons a {
+            font-size: 1.6em;
+        }
+        .services-icons a:hover {
+            color: #94fbab;
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgba(138, 208, 153, 0.36);
+            padding: 2em;
+        }
+        .footer .menu {
+            margin-bottom: 1em;
+            padding: 0;
+        }
+        .footer .menu li {
+            display: inline-block;
+            margin: 0 0.7em 0.7em 0;
+            text-align: center;
+        }
+        .footer .menu a {
+            transition: 0.3s;
+            font-weight: 600;
+        }
+        .footer .menu a:hover {
+            color: #94fbab;
+        }
+        .input-wrap {
+            margin: 1em 0;
+            display: flex;
+        }
+        .input-wrap input {
+            padding: 0.5em;
+            border: none;
+            background: #20232a;
+            color: #ccc;
+            border-radius: 4px 0 0 4px;
+            flex: 1;
+        }
+        .input-wrap input:focus {
+            outline: none;
+        }
+        .input-wrap button {
+            padding: 0.8em;
+            background: #94fbab;
+            border: none;
+            color: #217634;
+            transition: 0.3s;
+            border-radius: 0 4px 4px 0;
+        }
+        .input-wrap button:hover {
+            background: #fff;
+            color: #111;
+        }
+        /* == responsive == */
+        @media screen and (max-width: 900px) {
+            .footer .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="col1">
+            <a href="#" class="brand">Brand</a>
+            <ul class="media-icons">
+                <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="menu">
+                <li><a href="http://mage2rock.magento.com/">Home</a></li>
+                <li><a href="http://mage2rock.magento.com/contactus/index/">Contact</a></li>
+            </ul>
+            <p>Makali is committed to delivering high-quality products and exceptional customer service. We value innovation, integrity, and sustainability in all our business practices.</p>
+        </div>
+        <div class="col3">
+            <p>Subscribe to our newsletter</p>
+            <form>
+                <div class="input-wrap">
+                    <input type="email" placeholder="exemple@gmail.com" />
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </form>
+            <ul class="services-icons">
+                <li><a href="https://www.paypal.com/fr/home"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                <li><a href="https://www.apple.com/fr/apple-pay/"><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                <li><a href="https://pay.google.com/intl/fr_fr/about/"><i class="fa-brands fa-google-pay"></i></a></li>
+                <li><a href="https://pay.amazon.fr/"><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="mekk">
+            <p>@Makali 2024 - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>

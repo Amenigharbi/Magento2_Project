@@ -33,8 +33,6 @@ class Save extends Action implements HttpPostActionInterface
                 $data['entity_id'] = null;
             }
 
-           
-
             $model->setData($data);
 
             try {

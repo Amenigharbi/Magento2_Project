@@ -1,0 +1,135 @@
+
+.product-item {
+    font-size: 1.7rem;
+    line-height: normal;
+    letter-spacing: normal;
+    vertical-align: top;
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 15px; /* Add padding */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 20px; /* Space between product items */
+    position: relative; /* Ensure positioning context for .product-item-actions */
+}
+
+.product-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    border-color: #85c951; /* Change border color on hover */
+}
+
+.product-item-actions {
+    position: absolute; /* Position it within the product-item */
+    bottom: 0px; /* Move the button container lower */
+    left: 15px; /* Space from the left */
+    right: 15px; /* Space from the right */
+    display: flex;
+    justify-content: center;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.product-item:hover .product-item-actions {
+    opacity: 1; /* Show on hover */
+}
+
+.action.tocart.primary {
+    background-color: #0bac64; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 1.4rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.action.tocart.primary:hover {
+    background-color: #53e176; /* Darker shade on hover */
+}
+
+
+.orders-and-returns-page {
+    font-size: 16px; /* Default font size */
+    font-family: Arial, sans-serif; /* Default font family */
+    color: #176231; /* Default text color */
+}
+
+/* Customize specific elements if needed */
+.orders-and-returns-page h1,
+.orders-and-returns-page h2,
+.orders-and-returns-page h3 {
+    font-family: 'Open Sans', sans-serif; /* Example font family for headings */
+    color: #84c999; /* Example color for headings */
+}
+
+.orders-and-returns-page p {
+    font-size: 14px; /* Example font size for paragraphs */
+    line-height: 1.6; /* Example line height for paragraphs */
+}
+
+.orders-and-returns-page .action.primary {
+    background-color: #108236; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 3px; /* Button rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1.2rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.orders-and-returns-page .action.primary:hover {
+    background-color: #0fa819; /* Darker shade on hover */
+}
+.orders-and-returns-page .action.primary {
+    background-color: #1dc139 !important; /* Force apply */
+}
+.customer-name {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.customer-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.customer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.customer-menu ul li {
+    border-bottom: 1px solid #08a85b;
+}
+
+.customer-menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.customer-menu ul li a:hover {
+    background-color: #cbe4c8;
+}
+
+li.link.authorization-link a {
+    color: #35dc62;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li.link.authorization-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Afficher le menu lorsque l'utilisateur clique sur "Change" */
+.customer-name[data-action="customer-menu-toggle"] + .customer-menu {
+    display: block;
+}
+
