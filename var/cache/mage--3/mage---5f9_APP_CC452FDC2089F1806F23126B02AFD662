@@ -1,2 +1,2 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1725034661;s:6:"expire";i:1725041861;s:4:"tags";s:49:"5f9_STORE,5f9_CONFIG,5f9_COLLECTION_DATA,5f9_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1725044730;s:6:"expire";i:1725051930;s:4:"tags";s:49:"5f9_STORE,5f9_CONFIG,5f9_COLLECTION_DATA,5f9_MAGE";}
 [{"store_id":"1","code":"default","website_id":"1","group_id":"1","name":"English","sort_order":"0","is_active":"1"},{"store_id":"2","code":"de","website_id":"1","group_id":"1","name":"german","sort_order":"0","is_active":"0"},{"store_id":"3","code":"arabic","website_id":"1","group_id":"1","name":"\u0627\u0644\u0639\u0631\u0628\u064a\u0629","sort_order":"0","is_active":"0"}]

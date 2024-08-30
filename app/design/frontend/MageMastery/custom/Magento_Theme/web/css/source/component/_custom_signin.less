@@ -145,3 +145,117 @@
         }
     }
 }
+/* General Panel Wrapper */
+.panel.wrapper {
+    background-color:white; /* Remove the grey background */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove any shadow */
+    padding: 10px 20px; /* Padding around the panel */
+}
+
+/* Style for the panel header */
+.panel.header {
+    background-color: transparent; /* Remove the grey background */
+    padding: 10px 20px; /* Padding around the header */
+    border-bottom: none; /* Remove the bottom border */
+    box-shadow: none; /* Remove any shadow */
+}
+
+/* Hide the 'Skip to Content' Link */
+.panel.header .action.skip.contentarea {
+    display: none; /* Hide this link */
+}
+
+/* Flexbox Layout for Header Links */
+.panel.header .header.links {
+    display: flex;
+    gap: 20px; /* Space between links */
+    align-items: center; /* Center vertically */
+}
+
+/* Welcome Message for Not Logged-In Users */
+.panel.header .greet.welcome .not-logged-in {
+    font-size: 14px; /* Slightly smaller font */
+    color: #0ff96d; /* Dark grey color */
+    font-weight: 500; /* Medium weight */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin-right: 15px; /* Space between message and links */
+}
+
+/* Sign In Link */
+.panel.header .authorization-link a {
+    color: #4CAF50; /* Green color for the link */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.panel.header .authorization-link a:hover {
+    color: #388E3C; /* Darker green on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Create an Account Link */
+.panel.header #idOq8AZ5L1 {
+    color: #2196F3; /* Blue color for the link */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.panel.header #idOq8AZ5L1:hover {
+    color: #1976D2; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Welcome Message for Logged-In Users */
+.panel.header .greet.welcome .logged-in {
+    font-size: 16px; /* Standard font size */
+    color: #f1f9f1; /* Dark grey color */
+    font-weight: 600; /* Semi-bold for emphasis */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+/* Stylish 'Change' Button */
+.panel.header .customer-name .action.switch {
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Comfortable padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.panel.header .customer-name .action.switch:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Links Inside the Dropdown */
+.panel.header .customer-menu .header.links li a {
+    display: block;
+    padding: 10px 20px; /* Padding for clickable area */
+    color: #333; /* Dark text */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Medium weight */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.panel.header .customer-menu .header.links li a:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+    color: #000; /* Darker text on hover */
+}
+
+/* Sign Out Link (Outside Dropdown) */
+.panel.header .authorization-link a {
+    color: #6bee89; /* Red color for sign-out */
+    font-weight: 600; /* Semi-bold */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.panel.header .authorization-link a:hover {
+    color: #6deba2; /* Darker red on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
