@@ -5,13 +5,13 @@
     justify-content: center;
     padding: 20px;
 
-    .customer-login, .block-new-customer {
+    .block-customer-login, .block-new-customer {
         background-color: #ffffff; /* White background for clean look */
         border-radius: 12px;
         padding: 20px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for depth */
         flex: 1 1 100%; /* Full width on small screens */
-        max-width: 400px; /* Limit width for better readability */
+        max-width: 500px; /* Limit width for better readability */
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interaction effects */
 
         &:hover {
@@ -31,13 +31,12 @@
         }
 
         form, .block-content {
-            text-align: center; /* Center align text and elements */
 
             .field {
                 margin-bottom: 20px;
 
                 .label {
-                    color: #4caf50; /* Update label color to green */
+                    color: #0b0b0b; /* Update label color to green */
                     font-weight: bold;
                     font-size: 14px; /* Slightly smaller font for labels */
                 }
@@ -45,7 +44,7 @@
                 .control {
                     input {
                         width: 100%;
-                        padding: 14px;
+                        padding: 11px;
                         border-radius: 6px;
                         border: 1px solid #e0e0e0;
                         font-size: 16px;
@@ -61,52 +60,59 @@
                 }
             }
 
-            .actions {
+            .actions-toolbar {
                 display: flex;
                 flex-direction: column;
                 align-items: center; /* Center the actions */
                 gap: 10px;
                 margin-top: 20px;
-
-                .action {
-                    &.login, &.create-account, &.register {
-                        background: linear-gradient(135deg, #fbc02d, #f9a825); /* Yellow gradient for buttons */
-                        border: none;
-                        padding: 14px;
-                        border-radius: 6px;
-                        color: #fff;
-                        font-size: 16px;
-                        cursor: pointer;
-                        text-align: center;
-                        transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
-
-                        &:hover {
-                            background: linear-gradient(135deg, #f9a825, #fbc02d); /* Darker gradient on hover */
-                            transform: scale(1.02); /* Slightly enlarge on hover */
+            
+                .primary {
+                    .action {
+                        &.login {
+                            background: linear-gradient(135deg, #28a745, #218838); /* Green gradient for Sign In button */
+                            border: none;
+                            padding: 14px;
+                            border-radius: 6px;
+                            color: #fff;
+                            font-size: 16px;
+                            cursor: pointer;
+                            text-align: center;
+                            transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+            
+                            &:hover {
+                                background: linear-gradient(135deg, #218838, #1e7e34); /* Darker green gradient on hover */
+                                transform: scale(1.02); /* Slightly enlarge on hover */
+                            }
                         }
                     }
-
-                    &.remind {
-                        color: #fbc02d; /* Matching text color for reminder link */
-                        font-size: 14px;
-                        text-decoration: none;
-                        text-align: center; /* Center align text */
-                        transition: color 0.3s ease;
-
-                        &:hover {
-                            color: #f9a825; /* Darker yellow on hover */
-                            text-decoration: underline;
+                }
+            
+                .secondary {
+                    .action {
+                        &.remind {
+                            color: #000000; /* Black color for Forgot Your Password link */
+                            font-size: 14px;
+                            text-decoration: none;
+                            text-align: center; /* Center align text */
+                            transition: color 0.3s ease;
+            
+                            &:hover {
+                                color: #333333; /* Darker shade of black on hover */
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
             }
+            
         }
     }
 
     .block-new-customer {
         .block-content {
             p {
-                color: #4caf50; /* Update paragraph color to green */
+                color: #080c08; /* Update paragraph color to green */
                 font-size: 14px;
                 margin-bottom: 20px;
                 text-align: center; /* Center align text */
@@ -118,7 +124,7 @@
 
                     .action {
                         &.create {
-                            background: linear-gradient(135deg, #fbc02d, #f9a825); /* Yellow gradient for button */
+                            background: linear-gradient(135deg, #2d8742, #43b765); /* Yellow gradient for button */
                             border: none;
                             padding: 14px;
                             border-radius: 6px;
@@ -129,7 +135,7 @@
                             transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
 
                             &:hover {
-                                background: linear-gradient(135deg, #f9a825, #fbc02d); /* Darker gradient on hover */
+                                background: linear-gradient(135deg, #6dfc9f, #5be68c); /* Darker gradient on hover */
                                 transform: scale(1.02); /* Slightly enlarge on hover */
                             }
                         }

@@ -14898,7 +14898,7 @@ button.braintree-googlepay-button.black.long {
   justify-content: center;
   padding: 20px;
 }
-.login-container .customer-login,
+.login-container .block-customer-login,
 .login-container .block-new-customer {
   background-color: #ffffff;
   /* White background for clean look */
@@ -14908,68 +14908,61 @@ button.braintree-googlepay-button.black.long {
   /* Slightly deeper shadow for depth */
   flex: 1 1 100%;
   /* Full width on small screens */
-  max-width: 400px;
+  max-width: 500px;
   /* Limit width for better readability */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Smooth transition for interaction effects */
 }
-.login-container .customer-login:hover,
+.login-container .block-customer-login:hover,
 .login-container .block-new-customer:hover {
   transform: scale(1.02);
   /* Slightly enlarge the card on hover */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   /* Enhance shadow on hover */
 }
-.login-container .customer-login .page-title,
+.login-container .block-customer-login .page-title,
 .login-container .block-new-customer .page-title,
-.login-container .customer-login .block-title,
+.login-container .block-customer-login .block-title,
 .login-container .block-new-customer .block-title {
   text-align: center;
   /* Center align titles */
   margin-bottom: 20px;
 }
-.login-container .customer-login .page-title h1,
+.login-container .block-customer-login .page-title h1,
 .login-container .block-new-customer .page-title h1,
-.login-container .customer-login .block-title h1,
+.login-container .block-customer-login .block-title h1,
 .login-container .block-new-customer .block-title h1,
-.login-container .customer-login .page-title strong,
+.login-container .block-customer-login .page-title strong,
 .login-container .block-new-customer .page-title strong,
-.login-container .customer-login .block-title strong,
+.login-container .block-customer-login .block-title strong,
 .login-container .block-new-customer .block-title strong {
   color: #fbc02d;
   /* Bright yellow color */
   font-size: 26px;
   font-weight: bold;
 }
-.login-container .customer-login form,
-.login-container .block-new-customer form,
-.login-container .customer-login .block-content,
-.login-container .block-new-customer .block-content {
-  text-align: center;
-  /* Center align text and elements */
-}
-.login-container .customer-login form .field,
+.login-container .block-customer-login form .field,
 .login-container .block-new-customer form .field,
-.login-container .customer-login .block-content .field,
+.login-container .block-customer-login .block-content .field,
 .login-container .block-new-customer .block-content .field {
   margin-bottom: 20px;
 }
-.login-container .customer-login form .field .label,
+.login-container .block-customer-login form .field .label,
 .login-container .block-new-customer form .field .label,
-.login-container .customer-login .block-content .field .label,
+.login-container .block-customer-login .block-content .field .label,
 .login-container .block-new-customer .block-content .field .label {
-  color: #4caf50;
+  color: #0b0b0b;
   /* Update label color to green */
   font-weight: bold;
   font-size: 14px;
   /* Slightly smaller font for labels */
 }
-.login-container .customer-login form .field .control input,
+.login-container .block-customer-login form .field .control input,
 .login-container .block-new-customer form .field .control input,
-.login-container .customer-login .block-content .field .control input,
+.login-container .block-customer-login .block-content .field .control input,
 .login-container .block-new-customer .block-content .field .control input {
   width: 100%;
-  padding: 14px;
+  padding: 11px;
   border-radius: 6px;
   border: 1px solid #e0e0e0;
   font-size: 16px;
@@ -14978,9 +14971,9 @@ button.braintree-googlepay-button.black.long {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   /* Transition effects */
 }
-.login-container .customer-login form .field .control input:focus,
+.login-container .block-customer-login form .field .control input:focus,
 .login-container .block-new-customer form .field .control input:focus,
-.login-container .customer-login .block-content .field .control input:focus,
+.login-container .block-customer-login .block-content .field .control input:focus,
 .login-container .block-new-customer .block-content .field .control input:focus {
   border-color: #4caf50;
   /* Update focus border color to green */
@@ -14988,10 +14981,10 @@ button.braintree-googlepay-button.black.long {
   /* Update glow effect */
   outline: none;
 }
-.login-container .customer-login form .actions,
-.login-container .block-new-customer form .actions,
-.login-container .customer-login .block-content .actions,
-.login-container .block-new-customer .block-content .actions {
+.login-container .block-customer-login form .actions-toolbar,
+.login-container .block-new-customer form .actions-toolbar,
+.login-container .block-customer-login .block-content .actions-toolbar,
+.login-container .block-new-customer .block-content .actions-toolbar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14999,20 +14992,12 @@ button.braintree-googlepay-button.black.long {
   gap: 10px;
   margin-top: 20px;
 }
-.login-container .customer-login form .actions .action.login,
-.login-container .block-new-customer form .actions .action.login,
-.login-container .customer-login .block-content .actions .action.login,
-.login-container .block-new-customer .block-content .actions .action.login,
-.login-container .customer-login form .actions .action.create-account,
-.login-container .block-new-customer form .actions .action.create-account,
-.login-container .customer-login .block-content .actions .action.create-account,
-.login-container .block-new-customer .block-content .actions .action.create-account,
-.login-container .customer-login form .actions .action.register,
-.login-container .block-new-customer form .actions .action.register,
-.login-container .customer-login .block-content .actions .action.register,
-.login-container .block-new-customer .block-content .actions .action.register {
-  background: linear-gradient(135deg, #fbc02d, #f9a825);
-  /* Yellow gradient for buttons */
+.login-container .block-customer-login form .actions-toolbar .primary .action.login,
+.login-container .block-new-customer form .actions-toolbar .primary .action.login,
+.login-container .block-customer-login .block-content .actions-toolbar .primary .action.login,
+.login-container .block-new-customer .block-content .actions-toolbar .primary .action.login {
+  background: linear-gradient(135deg, #28a745, #218838);
+  /* Green gradient for Sign In button */
   border: none;
   padding: 14px;
   border-radius: 6px;
@@ -15023,45 +15008,37 @@ button.braintree-googlepay-button.black.long {
   transition: background 0.3s ease, transform 0.3s ease;
   /* Transition effects */
 }
-.login-container .customer-login form .actions .action.login:hover,
-.login-container .block-new-customer form .actions .action.login:hover,
-.login-container .customer-login .block-content .actions .action.login:hover,
-.login-container .block-new-customer .block-content .actions .action.login:hover,
-.login-container .customer-login form .actions .action.create-account:hover,
-.login-container .block-new-customer form .actions .action.create-account:hover,
-.login-container .customer-login .block-content .actions .action.create-account:hover,
-.login-container .block-new-customer .block-content .actions .action.create-account:hover,
-.login-container .customer-login form .actions .action.register:hover,
-.login-container .block-new-customer form .actions .action.register:hover,
-.login-container .customer-login .block-content .actions .action.register:hover,
-.login-container .block-new-customer .block-content .actions .action.register:hover {
-  background: linear-gradient(135deg, #f9a825, #fbc02d);
-  /* Darker gradient on hover */
+.login-container .block-customer-login form .actions-toolbar .primary .action.login:hover,
+.login-container .block-new-customer form .actions-toolbar .primary .action.login:hover,
+.login-container .block-customer-login .block-content .actions-toolbar .primary .action.login:hover,
+.login-container .block-new-customer .block-content .actions-toolbar .primary .action.login:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  /* Darker green gradient on hover */
   transform: scale(1.02);
   /* Slightly enlarge on hover */
 }
-.login-container .customer-login form .actions .action.remind,
-.login-container .block-new-customer form .actions .action.remind,
-.login-container .customer-login .block-content .actions .action.remind,
-.login-container .block-new-customer .block-content .actions .action.remind {
-  color: #fbc02d;
-  /* Matching text color for reminder link */
+.login-container .block-customer-login form .actions-toolbar .secondary .action.remind,
+.login-container .block-new-customer form .actions-toolbar .secondary .action.remind,
+.login-container .block-customer-login .block-content .actions-toolbar .secondary .action.remind,
+.login-container .block-new-customer .block-content .actions-toolbar .secondary .action.remind {
+  color: #000000;
+  /* Black color for Forgot Your Password link */
   font-size: 14px;
   text-decoration: none;
   text-align: center;
   /* Center align text */
   transition: color 0.3s ease;
 }
-.login-container .customer-login form .actions .action.remind:hover,
-.login-container .block-new-customer form .actions .action.remind:hover,
-.login-container .customer-login .block-content .actions .action.remind:hover,
-.login-container .block-new-customer .block-content .actions .action.remind:hover {
-  color: #f9a825;
-  /* Darker yellow on hover */
+.login-container .block-customer-login form .actions-toolbar .secondary .action.remind:hover,
+.login-container .block-new-customer form .actions-toolbar .secondary .action.remind:hover,
+.login-container .block-customer-login .block-content .actions-toolbar .secondary .action.remind:hover,
+.login-container .block-new-customer .block-content .actions-toolbar .secondary .action.remind:hover {
+  color: #333333;
+  /* Darker shade of black on hover */
   text-decoration: underline;
 }
 .login-container .block-new-customer .block-content p {
-  color: #4caf50;
+  color: #080c08;
   /* Update paragraph color to green */
   font-size: 14px;
   margin-bottom: 20px;
@@ -15073,7 +15050,7 @@ button.braintree-googlepay-button.black.long {
   /* Center align action */
 }
 .login-container .block-new-customer .block-content .actions-toolbar .primary .action.create {
-  background: linear-gradient(135deg, #fbc02d, #f9a825);
+  background: linear-gradient(135deg, #2d8742, #43b765);
   /* Yellow gradient for button */
   border: none;
   padding: 14px;
@@ -15086,7 +15063,7 @@ button.braintree-googlepay-button.black.long {
   /* Transition effects */
 }
 .login-container .block-new-customer .block-content .actions-toolbar .primary .action.create:hover {
-  background: linear-gradient(135deg, #f9a825, #fbc02d);
+  background: linear-gradient(135deg, #6dfc9f, #5be68c);
   /* Darker gradient on hover */
   transform: scale(1.02);
   /* Slightly enlarge on hover */
